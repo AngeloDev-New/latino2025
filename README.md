@@ -1,0 +1,1 @@
+└─$ latexmk -pdf -pvc -f fenotipagen.tex
