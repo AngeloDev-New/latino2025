@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex fenotipagen"] 1752777136.89975 "fenotipagen.aux" "fenotipagen.bbl" "fenotipagen" 1752779878.25462 0
+["bibtex fenotipagen"] 1752863660.83997 "fenotipagen.aux" "fenotipagen.bbl" "fenotipagen" 1752863661.05229 0
   "./IEEEtran.bst" 1749500140 59215 bc5380b3434a66b895bbc75d3d380540 ""
-  "./example.bib" 1749500140 661 90f697c7541c710877d5264e1495be69 ""
-  "fenotipagen.aux" 1752779877.5931 1178 71d82b532f9f71b19e55029008306b47 "pdflatex"
+  "./example.bib" 1752863659.7167 5087 f16d896e152cbf06c525b9d00f6cac9b ""
+  "fenotipagen.aux" 1752863418.64198 3233 2cc5a1c9e412e4e3201b1edb190c4927 "pdflatex"
   (generated)
   "fenotipagen.bbl"
   "fenotipagen.blg"
   (rewritten before read)
-["pdflatex"] 1752779873.24598 "fenotipagen.tex" "fenotipagen.pdf" "fenotipagen" 1752779878.25518 2
+["pdflatex"] 1752863415.57599 "fenotipagen.tex" "fenotipagen.pdf" "fenotipagen" 1752863661.05242 2
   "/etc/texmf/web2c/texmf.cnf" 1751065331.72502 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -16,6 +16,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm" 1136768653 2228 e564491c42a4540b5ebb710a75ff306c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm" 1136768653 4480 10409ed8bab5aea9ec9a78028b763919 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm" 1136768653 2124 2601a75482e9426d33db523edf23570a ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm" 1136768653 1352 fa28a7e6d323c65ce7d13d5342ff6be2 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm" 1136768653 4408 25b74d011a4c66b7f212c0cc3c90061b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm" 1136768653 2680 312a2d12b1f1df8ee0212e7ba1962402 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm" 1136768653 2288 f478fc8fed18759effb59f3dad7f3084 ""
@@ -26,12 +27,14 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb" 1136849748 44656 0cbca70e0534538582128f6b54593cca ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf" 1136768653 1372 788387fea833ef5963f4c5bffe33eb89 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmbi7t.vf" 1136768653 1384 6ac0f8b839230f5d9389287365b243c0 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf" 1136768653 1380 0ea3a3370054be6da6acd929ec569f06 ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf" 1136768653 3556 8a9a6dcbcd146ef985683f677f4758a6 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf" 1136768653 1948 7330aeef3af211edff3b35fb2c12a0fd ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1734129479 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
@@ -128,6 +131,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1601326656 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1601326656 325 f9f16d12354225b7dd52a3321f085955 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd" 1137110629 619 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty" 1158586182 21369 9ef165ca6df8815c92e693146a376c92 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tikzpagenodes/tikzpagenodes.sty" 1348011662 5958 e201012c018609cdedc3209f35833fbc ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty" 1730496337 14552 27664839421e418b87f56fa4c6f66b1a ""
@@ -138,12 +142,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1752769467 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1752769614 3345713 9876cc114e0ca3402959de0919699578 ""
   "IEEEtran.cls" 1749500140 282009 b3ef2366fea9c3670678b6bd58854c9a ""
-  "fenotipagen.aux" 1752779877.5931 1178 71d82b532f9f71b19e55029008306b47 "pdflatex"
-  "fenotipagen.bbl" 1752777137.07196 877 ff870bcb4c5888cb430f09fb5d82ad80 "bibtex fenotipagen"
-  "fenotipagen.tex" 1752779871.4489 31347 c6d78ddbdddd200f0091e67e1f7745dc ""
+  "fenotipagen.aux" 1752863418.64198 3233 2cc5a1c9e412e4e3201b1edb190c4927 "pdflatex"
+  "fenotipagen.bbl" 1752863661.03674 877 ff870bcb4c5888cb430f09fb5d82ad80 "bibtex fenotipagen"
+  "fenotipagen.tex" 1752863413.76184 23362 136f34f6b5f04c08f0fcc755e7e9f502 ""
+  "figs/api.jpeg" 1752780387.08465 18266 8967f29cf7c6fc4c863e5a1dfb11c447 ""
+  "figs/comparacion.jpeg" 1752781552.77031 81375 3682a451fc846b301682e855417317dd ""
+  "figs/image_exemple.jpeg" 1752856385.89215 51659 74bc760b617082b7f205cd189eebbfb1 ""
+  "figs/randon_forest.jpeg" 1752778348.3286 20977 2fb49b1eff5dfa0ea443536031e78f46 ""
   "footerimg.png" 1749500140 500954 aee2ceaa22d3880e20b691a5c079ac96 ""
   "headerimg.png" 1749500140 905381 fa7714101840d270b13ad1cc3f4fee65 ""
-  "randon_forest.jpeg" 1752778348.3286 20977 2fb49b1eff5dfa0ea443536031e78f46 ""
   (generated)
   "fenotipagen.aux"
   "fenotipagen.log"

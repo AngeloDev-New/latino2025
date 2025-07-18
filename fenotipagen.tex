@@ -1,238 +1,27 @@
-%==========================================
-%
-% Latin.Science 2025  template para artigo
-% Adaptado de IEEEtran.cls
-%
-%==========================================
-% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
-% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
-% *** with production work. The IEEE's font choices and paper sizes can   ***
-% *** trigger bugs that do not appear when using other class files.       ***                          ***
-% The testflow support page is at:
-% http://www.michaelshell.org/tex/testflow/
-
 \documentclass[10pt,conference]{IEEEtran}
-
-% Some very useful LaTeX packages include:
-% (uncomment the ones you want to load)
-
-
-% *** MISC UTILITY PACKAGES ***
-%
-%\usepackage{ifpdf}
-% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
-% compilation based on whether the output is pdf or dvi.
-% usage:
-% \ifpdf
-%   % pdf code
-% \else
-%   % dvi code
-% \fi
-% The latest version of ifpdf.sty can be obtained from:
-% http://www.ctan.org/pkg/ifpdf
-% Also, note that IEEEtran.cls V1.7 and later provides a builtin
-% \ifCLASSINFOpdf conditional that works the same way.
-% When switching from latex to pdflatex and vice-versa, the compiler may
-% have to be run twice to clear warning/error messages.
-
-% *** CITATION PACKAGES ***
-%
 \usepackage{cite}
-% cite.sty was written by Donald Arseneau
-% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of the IEEE. Loading the cite package will
-% result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
-% noadjust option (cite.sty V3.8 and later) if you want to turn this off
-% such as if a citation ever needs to be enclosed in parenthesis.
-% cite.sty is already installed on most LaTeX systems. Be sure and use
-% version 5.0 (2009-03-20) and later if using hyperref.sty.
-% The latest version can be obtained at:
-% http://www.ctan.org/pkg/cite
-% The documentation is contained in the cite.sty file itself.
-
-% *** GRAPHICS RELATED PACKAGES ***
-%
 \ifCLASSINFOpdf
    \usepackage[pdftex]{graphicx}
-  % declare the path(s) where your graphic files are
    \graphicspath{{figs/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
    \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
-  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
-  % will default to the driver specified in the system graphics.cfg if no
-  % driver is specified.
    \usepackage[dvips]{graphicx}
-  % declare the path(s) where your graphic files are
    \graphicspath{{../figs/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
    \DeclareGraphicsExtensions{.eps}
 \fi
-% graphicx was written by David Carlisle and Sebastian Rahtz. It is
-% required if you want graphics, photos, etc. graphicx.sty is already
-% installed on most LaTeX systems. The latest version and documentation
-% can be obtained at: 
-% http://www.ctan.org/pkg/graphicx
-% Another good source of documentation is "Using Imported Graphics in
-% LaTeX2e" by Keith Reckdahl which can be found at:
-% http://www.ctan.org/pkg/epslatex
-%
-% latex, and pdflatex in dvi mode, support graphics in encapsulated
-% postscript (.eps) format. pdflatex in pdf mode supports graphics
-% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
-% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
-% not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
-% which can result in "jaggedy"/blurry rendering of lines and letters as
-% well as large increases in file sizes.
-%
-% You can find documentation about the pdfTeX application at:
-% http://www.tug.org/applications/pdftex
-
-% *** MATH PACKAGES ***
-%
 \usepackage[cmex10]{amsmath}
-% A popular package from the American Mathematical Society that provides
-% many useful and powerful commands for dealing with mathematics.
-%
-% Note that the amsmath package sets \interdisplaylinepenalty to 10000
-% thus preventing page breaks from occurring within multiline equations. Use:
 \interdisplaylinepenalty=2500
-% after loading amsmath to restore such page breaks as IEEEtran.cls normally
-% does. amsmath.sty is already installed on most LaTeX systems. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/pkg/amsmath
 \usepackage{amsthm}
 \newtheorem{definition}{Definition}
-
-% *** SPECIALIZED LIST PACKAGES ***
-%
 \usepackage{algorithmic}
-% algorithmic.sty was written by Peter Williams and Rogerio Brito.
-% This package provides an algorithmic environment fo describing algorithms.
-% You can use the algorithmic environment in-text or within a figure
-% environment to provide for a floating algorithm. Do NOT use the algorithm
-% floating environment provided by algorithm.sty (by the same authors) or
-% algorithm2e.sty (by Christophe Fiorio) as the IEEE does not use dedicated
-% algorithm float types and packages that provide these will not provide
-% correct IEEE style captions. The latest version and documentation of
-% algorithmic.sty can be obtained at:
-% http://www.ctan.org/pkg/algorithms
-% Also of interest may be the (relatively newer and more customizable)
-% algorithmicx.sty package by Szasz Janos:
-% http://www.ctan.org/pkg/algorithmicx
-
-% *** ALIGNMENT PACKAGES ***
-%
 \usepackage{array}
-% Frank Mittelbach's and David Carlisle's array.sty patches and improves
-% the standard LaTeX2e array and tabular environments to provide better
-% appearance and additional user controls. As the default LaTeX2e table
-% generation code is lacking to the point of almost being broken with
-% respect to the quality of the end results, all users are strongly
-% advised to use an enhanced (at the very least that provided by array.sty)
-% set of table tools. array.sty is already installed on most systems. The
-% latest version and documentation can be obtained at:
-% http://www.ctan.org/pkg/array
-
-
-% IEEEtran contains the IEEEeqnarray family of commands that can be used to
-% generate multiline equations as well as matrices, tables, etc., of high
-% quality.
-
-% *** SUBFIGURE PACKAGES ***
 \ifCLASSOPTIONcompsoc
   \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
 \else
   \usepackage[caption=false,font=footnotesize]{subfig}
 \fi
-% subfig.sty, written by Steven Douglas Cochran, is the modern replacement
-% for subfigure.sty, the latter of which is no longer maintained and is
-% incompatible with some LaTeX packages including fixltx2e. However,
-% subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
-% which will override IEEEtran.cls' handling of captions and this will result
-% in non-IEEE style figure/table captions. To prevent this problem, be sure
-% and invoke subfig.sty's "caption=false" package option (available since
-% subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
-% handling of captions.
-% Note that the Computer Society format requires a larger sans serif font
-% than the serif footnote size font used in traditional IEEE formatting
-% and thus the need to invoke different subfig.sty package options depending
-% on whether compsoc mode has been enabled.
-%
-% The latest version and documentation of subfig.sty can be obtained at:
-% http://www.ctan.org/pkg/subfig
-
-% *** FLOAT PACKAGES ***
-%
-%\usepackage{fixltx2e}
-% fixltx2e, the successor to the earlier fix2col.sty, was written by
-% Frank Mittelbach and David Carlisle. This package corrects a few problems
-% in the LaTeX2e kernel, the most notable of which is that in current
-% LaTeX2e releases, the ordering of single and double column floats is not
-% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
-% single column figure to be placed prior to an earlier double column
-% figure.
-% Be aware that LaTeX2e kernels dated 2015 and later have fixltx2e.sty's
-% corrections already built into the system in which case a warning will
-% be issued if an attempt is made to load fixltx2e.sty as it is no longer
-% needed.
-% The latest version and documentation can be found at:
-% http://www.ctan.org/pkg/fixltx2e
-
-
-%\usepackage{stfloats}
-% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
-% the ability to do double column floats at the bottom of the page as well
-% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
-% LaTeX2e). It also provides a command:
-%\fnbelowfloat
-% to enable the placement of footnotes below bottom floats (the standard
-% LaTeX2e kernel puts them above bottom floats). This is an invasive package
-% which rewrites many portions of the LaTeX2e float routines. It may not work
-% with other packages that modify the LaTeX2e float routines. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/pkg/stfloats
-% Do not use the stfloats baselinefloat ability as the IEEE does not allow
-% \baselineskip to stretch. Authors submitting work to the IEEE should note
-% that the IEEE rarely uses double column equations and that authors should try
-% to avoid such use. Do not be tempted to use the cuted.sty or midfloat.sty
-% packages (also by Sigitas Tolusis) as the IEEE does not format its papers in
-% such ways.
-% Do not attempt to use stfloats with fixltx2e as they are incompatible.
-% Instead, use Morten Hogholm'a dblfloatfix which combines the features
-% of both fixltx2e and stfloats:
-%
-% \usepackage{dblfloatfix}
-% The latest version can be found at:
-% http://www.ctan.org/pkg/dblfloatfix
-
-% *** PDF, URL AND HYPERLINK PACKAGES ***
-%
 \usepackage{url}
-% url.sty was written by Donald Arseneau. It provides better support for
-% handling and breaking URLs. url.sty is already installed on most LaTeX
-% systems. The latest version and documentation can be obtained at:
-% http://www.ctan.org/pkg/url
-% Basically, \url{my_url_here}.
-
-
-
-
-% *** Do not adjust lengths that control margins, column widths, etc. ***
-% *** Do not use packages that alter fonts (such as pslatex).         ***
-% There should be no need to do such things with IEEEtran.cls V1.6 and later.
-% (Unless specifically asked to do so by the journal or conference you plan
-% to submit to, of course. )
-
-% correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
-
-% PACOTES RELACIONADOS A ADIÇÃO DO CABEÇALHO DAS PAGINAS
 \usepackage[left=1.6cm,top=4cm,right=1.6cm,bottom=1.5cm,headheight=1cm]{geometry}
 \usepackage{lipsum}
 \usepackage{graphicx}
@@ -266,114 +55,47 @@ node [inner sep=0,outer sep=0,above right]
 
  
 \begin{document}
-%
-% paper title
-% Titles are generally capitalized except for words such as a, an, and, as,
-% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
-% not capitalized unless they are the first or last word of the title.
-% Linebreaks \\ can be used within to get better formatting as desired.
-% Do not put math or special symbols in the title.
-
 \title{Phenological Classification of Soybeans:  Comparison between Convolutional Neural Networks and Random Forest with Integration into a Mobile Application }
-
-%------------------------------------------------------------------------- 
-%------------------------IMPORTANTE---------------------------------------
 \newif\iffinal
 \finaltrue
-%------------------------------------------------------------------------- 
-% author names and affiliations
-% use a multiple column layout for up to two different
-% affiliations
 \iffinal
-% author names and affiliations
-% use a multiple column layout for up to three different
-% affiliations
-% \author{
-% \IEEEauthorblockN{Angelo Gabriel Soares dos Santos}
-% \IEEEauthorblockA{Biopark\\
-% Cascavel PR, Brasil\\
-% angelo.dev.santos@gmail.com}
-% \and
-% \IEEEauthorblockN{Nome do segundo autor\\ (omitir na versão para avaliação)}
-% \IEEEauthorblockA{Afiliação\\
-% Cidade, País\\
-% email ou ORCID}
-% \and
-% \IEEEauthorblockN{Nome do terceiro autor \\(omitir na versão para avaliação)}
-% \IEEEauthorblockA{Nome do quarto autor\\
-% Afiliação
-% Cidade, País\\
-% numero do telefone}}
-% conference papers do not typically use \thanks and this command
-% is locked out in conference mode. If really needed, such as for
-% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
-% after \documentclass
-
-% for over three affiliations, or if they all won't fit within the width
-% of the page, use this alternative format:
-% 
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3}, 
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
-
+    % \author{
+    % \IEEEauthorblockN{Vinicius Tessele}
+    % \IEEEauthorblockA{Dept. of Artificial Intelligence \\
+    % Biopark Educação \\
+    % Toledo, Brazil \\
+    % ORCID: 0000-0002-0662-9200}
+    % \and
+    % \IEEEauthorblockN{Claudio Honorio da Silva Junior}
+    % \IEEEauthorblockA{Dept. of Artificial Intelligence \\
+    % Biopark Educação \\
+    % Toledo, Brazil \\
+    % ORCID: 0009-0000-5043-0517}
+    % \and
+    % \IEEEauthorblockN{Angelo Gabriel}
+    % \IEEEauthorblockA{Dept. of Artificial Intelligence \\
+    % Biopark Educação \\
+    % Toledo, Brazil \\
+    % ORCID: 0009-0005-7939-5301}
+    % \and
+    % \IEEEauthorblockN{Leonardo Tampelini}
+    % \IEEEauthorblockA{Dept. of Artificial Intelligence \\
+    % Biopark Educação \\
+    % Toledo, Brazil \\
+    % ORCID: 0009-0000-9307-4444}
+    % }
 \else
   \author{ID do artigo Latin.science 2020: \cmtid \\ }
 \fi
-
-
-% make the title area
 \maketitle
-
-%utilizado para adicionar header nesta página
 \thispagestyle{fancy}
-
-
-% As a general rule, do not put math, special symbols or citations
-% in the abstract
-
 \begin{abstract}Soybean desiccation is an essential practice for maximizing productivity, with the R7 phenological stage, according to the Fehr and Caviness system, being the ideal time for its execution. Traditional identification methods based on manual observation are subjective and prone to errors, potentially compromising seed quality and crop yield. Studies show that desiccation at the R7.1 stage significantly improves seed quality, while premature applications, such as at R6, impair performance. With the advancement of artificial intelligence (AI), automated methods such as Convolutional Neural Networks (CNNs) and the Random Forest algorithm emerge as effective solutions for the phenological classification of soybeans. CNNs extract features from agricultural images, utilizing architectures such as ResNet50, InceptionV3, and VGG16, while Random Forest analyzes images and agronomic data, standing out for its robustness and generalization capability. The integration of these technologies with mobile applications developed in frameworks like Flutter facilitates producers' access to practical and efficient tools, promoting precision agriculture. The use of well-labeled datasets is fundamental for training the models, ensuring high accuracy in the identification of phenological stages beyond R7. Thus, automating this process reduces human errors, improves seed quality, and boosts sustainability and efficiency in soybean management. \end{abstract}
 
 \renewcommand{\IEEEkeywordsname}{Keywords}
-% no keywords
 \begin{IEEEkeywords}
 Soybean Desiccation; Phenological Classification; Convolutional Neural Networks; Random Forest; Mobile Applications; Precision Agriculture
 \end{IEEEkeywords}
-
-% \renewcommand{\abstractname}{Resumo}
-% %\renewcommand{\abstractname}{Resumen}
-
-% \begin{abstract}
-%  Caso o artigo seja escrito na língua inglesa, esta seção deve ser removida, do contrário, coloque aqui o resumo do artigo, em português ou em espanhol, seguindo a mesma língua escolhida para o texto do artigo.
-% \end{abstract}
-
-% \renewcommand\IEEEkeywordsname{Palavras-chave}
-
-% % no keywords
-% \begin{IEEEkeywords}
-% palavra-chave 1; palavra-chave 2; palavra-chave 3.
-% \end{IEEEkeywords}
-
-
-
-
-
-
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
-
-
-
 \section{Introduction} 
 Desiccation of soybean is a common practice aimed at maximizing both yield and harvest quality. Determining the optimal timing for this application is based on identifying phenological stages, which indicate the plant's maturity level. The traditional method, conducted through manual observation, relies heavily on the experience of the farmer or the responsible technician. However, this subjective approach can lead to errors that compromise decision-making. The R7 phenological stage is widely recognized as the most appropriate time for desiccation, according to the coding system established by Fehr and Caviness. The phenological classifications described in this system include subdivisions that exhibit specific characteristics, which are essential for the application of Artificial Intelligence (AI). 
 \begin{table}[!h]
@@ -403,27 +125,6 @@ R8 & Full Maturity  & 95\% of the pods have reached their mature pod color \\
 \hline
 \end{tabular}
 \end{table}
-% O artigo deve ser submetido \textbf{no formato pdf} e pode ser redigido em documento no formato docx, odt ou látex. Temos duas modalidades de trabalhos: Trabalhos Completos (Full paper: entre 6 e 10 páginas), que são trabalhos concluídos sobre pesquisas realizadas em um dos tópicos de interesse do Latinoware; e Trabalhos em Andamento (Short paper: entre 3 e 4 páginas), que são trabalhos ainda não concluídos, mas já com ideias relevantes a serem discutidas e resultados preliminares. Seguem algumas instruções de formatação: fonte Times New Roman, tamanho 10, papel A4 com a seguinte formatação de margens: superior 2cm, inferior 2,5cm, lateral esquerda 1,6cm, lateral direita 1,6cm. O número máximo de páginas é cinco. Utilize o modelo para submeter seu artigo. Exemplo de citação \cite{nascimento2023aplicaccao}. O artigo submetido dever conter: \textbf{Título, Abstract, Palavras-chave, Introdução, outras  seções} que os autores julgarem adequadas para organizar a escrita do texto, \textbf{Resultados e Discussão, Conclusões, Agradecimentos e Referências}. Caso o texto do artigo seja escrito em português ou espanhol, o artigo deve conter, além das estruturas citadas anteriormente, um \textbf{Resumo} se o artigo for escrito em português ou \textbf{Resumen} se o artigo for escrito em espanhol. Destacamos também que os artigos escritos em português ou espanhol devem traduzir os títulos dos elementos obrigatórios para a mesma língua escolhida para a escrita do texto do artigo. Ressaltamos que  \textbf{o nome dos autores e suas afiliações não devem ser colocadas no artigo submetido}, para que a revisão possa ser conduzida de maneira cega. Caso seu artigo seja aceito para apresentação e publicação no evento, o nome dos autores e suas afiliações deverão ser adicionadas na versão final.
- 
-% \subsection{Subseção 1}
-% Caso julgue necessário adicionar subseções no seu texto, devem estar formatados conforme este modelo.
-
-% \subsubsection{Subsubseção}
-% Caso julgue necessário, poderá utilizar subsubseções para organizar seu texto. A seguir é apresentado um exemplo de figura. A Figura \ref{fig_sim} mostra a logo do Latinoware do ano de 2025. 
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
 As demonstrated in [4], the application of herbicides at the R7.1 stage brings significant benefits to seed quality, positively impacting germination and vigor when compared to the R7.3 stage. These results highlight the importance of accurately identifying the ideal timing for desiccation in order to maximize seed performance and contribute to the final productivity and quality of soybeans. According to [12], the application of desiccants at different developmental stages of soybean affects productivity and physiological seed quality, with significantly lower values observed when desiccants are applied at the R6 stage, demonstrating a negative impact on yield. On the other hand, [13] reported that desiccant application at the R7.1 stage allowed for harvest anticipation of up to six days while maintaining high germination rates (90\% and 92\%) compared to the control (76\%). Furthermore, desiccation did not compromise seed productivity, positioning itself as an efficient management alternative in seed production fields. 
 
 As discussed in [3], the timing of desiccant application directly influences post-harvest attributes of soybean grains. Anticipating the process in relation to physiological maturity results in a lower thousand-grain weight and higher bulk density. Additionally, early applications result in reduced oil content. However, desiccation performed at the recommended stage contributes to minimizing damage caused by pathogens, reinforcing the importance of adhering to the appropriate phenological stages. 
@@ -433,136 +134,132 @@ Artificial Intelligence (AI) plays an increasingly important role in the advance
 Artificial Neural Networks (ANNs) have been widely applied and successfully implemented across different sectors. Among their most relevant applications is image recognition and classification, allowing for the identification and categorization of visual content into specific classes [8]. When comparing models, it is important to note that despite the high accuracy of CNNs, their complexity and large data requirements may pose limitations. Conversely, the Random Forest (RF) algorithm, a decision tree-based learning model, has been successfully applied to image classification tasks. In [14], a CNN model using imageClassificationMulti was shown to effectively classify soybean plants with high accuracy, although it presented some limitations due to visually similar crops. 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=2.5in]{randon_forest.jpeg}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
+\includegraphics[width=2.5in]{figs/randon_forest.jpeg}
 \caption{The Random Forest (RF) algorithm}
 \label{fig_sim}
 \end{figure}
-% \subsection{Subseção 2}
-% Coloque aqui o texto da subseção 2, caso ache conveniente para organização do texto do seu artigo. A Tabela \ref{table_example} apresenta um exemplo de tabela.
 In another study [15], CNNs were used to detect soybean diseases, but challenges were encountered in distinguishing between visually similar disease symptoms, which may lead to misclassification. These issues highlight the importance of a robust and high-quality dataset, with well-labeled images that cover all possible variations. Nevertheless, CNNs can be effectively trained when the dataset is diverse and capable of capturing relevant visual nuances. 
 
  This study proposes a comparison between three different CNN architectures and the Random Forest model to evaluate their performance in phenological classification tasks. The goal is to identify the most effective approach for accurately classifying phenological stages, considering model accuracy, ease of implementation, and data requirements. The CNN models used—ResNet50, InceptionV3, and VGG16—were chosen due to their proven efficiency in various computer vision contexts. The Random Forest (RF) model was selected for its strong performance in classification tasks, interpretability, and lower susceptibility to overfitting. This comparison enables a comprehensive analysis to determine the most suitable tool for phenological stage classification in soybean crops. 
-% Note that the IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-% An example of a floating table. Note that, for IEEE style tables, the
-% \caption command should come BEFORE the table and, given that table
-% captions serve much like titles, are usually capitalized except for words
-% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
-% and up, which are usually not capitalized unless they are the first or
-% last word of the caption. Table text will default to \footnotesize as
-% the IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-\begin{table}[!h]
-%% increase table row spacing, adjust to taste
-\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-\caption{Uma tabela exemplo}
-\label{table_example}
+\begin{figure}[!h]
 \centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-\begin{tabular}{|c||c|}
+\includegraphics[width=2.5in]{figs/api.jpeg}
+\caption{Integration between RF, API, and App}
+\label{fig_sim}
+\end{figure}
+Before the training and the decision on the best classification technology to be integrated between the mobile app and the segmentation technology, the following technologies were used: 
+\begin{itemize}
+\item Flask: To create the API and manage HTTP requests.
+\item TensorFlow: To load the machine learning model and make predictions. 
+\item PIL (Pillow): For image manipulation. 
+\item NumPy: For handling arrays and numerical data.
+\end{itemize}
+\section{Materials and Methods}
+This research is experimental and applied in nature, with the objective of training three CNN network models and one RF model to compare the results and select the best solution for identifying the ideal moment for soybean crop desiccation. For the success of the study, it was necessary to collect images at different phenological stages, resulting in 10,000 soybean images from the Western region of Paraná, during the period from October 2024 to January 2025. The images were classified into two main groups: those in which the phenological stage was above R7 and those in which it was below R7. These classifications were essential for training the CNN and RF. 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/comparacion.jpeg}
+\caption{Distribution of images in training and validation classes. }
+\label{fig_sim}
+\end{figure}
+For the training of CNN and Random Forest (RF) models, 2,301 images of different phenological stages were selected for the training set and 2,280 images for the validation set, as illustrated in Fig. 1. These images played an important role in ensuring that the models were capable of generalizing and performing accurate classifications, especially regarding phenological stages above R7. The images were carefully captured, taking into consideration the need to avoid the presence of unwanted elements, such as shadows, trees, buildings, and sky, which could introduce noise and compromise the quality of the training. 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\caption{Implemented Neural Networks VGG16, Inception3, ResNet50.}
+\label{fig_sim}
+\end{figure}
+Fig. 3 shows the implementation of the VGG16, Inception3, and ResNet50 CNNs. These CNN architectures are popular and contain particularities that make them different and are used for different types of image classification problems. VGGNet, developed by Simonyan and Zisserman in 2015, is a CNN architecture that exclusively uses 3×3 filters in its convolutional layers. The VGG16 version, composed of 16 layers, demonstrated high accuracy in image classification. However, its depth results in high memory consumption and significant computational demand [9999]. 
+InceptionV3 is a more complex CNN, proposed by Google. The differential of this architecture lies in its use of Inception modules, which apply different filter sizes (such as 1x1, 3x3, 5x5) and dimensionality reduction techniques, such as 1x1 convolution, allowing the network to extract a greater number of features efficiently. The main advantage of InceptionV3 is its ability to balance accuracy and computational efficiency, making it faster and more effective compared to simpler networks, such as VGG16 [9999]. Additionally, it is better able to handle images of different scales and contexts, making it useful for classifying complex images, such as those found in agricultural contexts. 
+ResNet50 is one of the most innovative architectures, known for introducing residual blocks. These blocks allow information to flow directly from one layer to another, without the need for intermediate passages, which helps avoid the problem of network degradation. It is composed of 50 layers and was designed to handle extremely deep networks without losing performance. 
+All three architectures (VGG16, InceptionV3, and ResNet50) were trained using an 80\% split for training and 20\% for testing. After training, a validation set was used to monitor the model's performance and adjust hyperparameters during the training process, ensuring that the model generalized well and was not merely overfitting to the training data. This approach helps ensure that the model learns the relevant characteristics of the data without losing its generalization capacity for new data.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\caption{Random Forest feature extraction model}
+Random Forest, as illustrated in Fig. 4, is a machine learning model based on decision trees. It builds multiple trees and combines their results to obtain more robust predictions. 
+
+\label{fig_sim}
+\end{figure}
+\section*{Results and Discussion}
+Table II presents the accurate results obtained for the training and validation datasets. 
+\begin{table}[!h]
+\renewcommand{\arraystretch}{1.3}
+\caption{Model Accuracy}
+\label{table:model_accuracy}
+\centering
+\begin{tabular}{|c|c|p{5.5cm}|}
 \hline
-One & Two\\
+\textbf{Model} & \textbf{Training Accuracy (\%) } & \textbf{Validation Accuracy (\%) } \\
 \hline
-Three & Four\\
+ResNet50 & 94.51 & 73.55 \\
+\hline
+InceptionV3 & 98.37  & 70.75 \\
+\hline
+VGG16 & 98.72  & 70.96 \\
+\hline
+Random Florest  & 100.00 & 86.45 \\
 \hline
 \end{tabular}
 \end{table}
+\caption{Comparison of training and validation accuracy among models.}
 
+Although the convolutional neural network (CNN) models achieved high accuracy on the training set, their performance on the validation set was onsiderably lower, indicating the presence of overfitting. Overfitting occurs when a model learns the patterns of the training set too well and too quickly, which hinders its ability to generalize to unseen data. 
 
-% Note that the IEEE does not put floats in the very first column
-% - or typically anywhere on the first page for that matter. Also,
-% in-text middle ("here") positioning is typically not used, but it
-% is allowed and encouraged for Computer Society conferences (but
-% not Computer Society journals). Most IEEE journals/conferences use
-% top floats exclusively. 
-% Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the
-% \fnbelowfloat command of the stfloats package.
+In contrast the decision tree-based model, Random Forest, achieved 100\% accuracy on the training set and also recorded the highest validation accuracy, demonstrating superior generalization capability. 
 
-%A figura \ref{fig_sim2} apresenta outra maneira para apresentação de figuras no texto. Neste caso a figura é dividida em duas subfiguras.
+These results suggest that, despite the complexity and strong fitting performance of deep neural networks on training data, a traditional machine learning model may be more effective in terms of generalization, depending on the context and nature of the data. 
+Furthermore, confusion matrices for the VGG16, ResNet50, and InceptionV3 models were analyzed to further evaluate the performance of these algorithms.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\caption{Confusion Matrix – ResNet50. }
+\label{fig_sim}
+\end{figure}
+The ResNet50 model achieved a training accuracy of 94.51\%. However, its validation accuracy dropped to 73.55\%, suggesting potential overfitting on the training data. The confusion matrix for ResNet50, shown in Fig. 4, revealed a balanced distribution between the classes, with a correct classification rate of 42\% for the 'Other' class and 58\% for the 'R7' class. These results indicate challenges in accurate class identification, leading to suboptimal model performance. 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\caption{Confusion Matrix –  Incetion V3.  }
+\label{fig_sim}
+\end{figure}
+The InceptionV3 model demonstrated excellent performance on the training dataset, achieving an accuracy of 98.37\%. However, the validation accuracy decreased to 70.75\%, indicating overfitting. As illustrated in Fig. 5, the confusion matrix shows a similar pattern to that of ResNet50, with a 41\% accuracy for the 'Other' class and 59\% for the 'R7' class. The false positive rate was 59\%, while the false negative rate was 41\%. InceptionV3 also struggles with distinguishing between classes, particularly in classifying instances of the 'Other' class. 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\caption{Confusion Matrix –  VGG16. }
+\label{fig_sim}
+\end{figure}
+The VGG16 model achieved the highest training accuracy, with 98.72\%, and exhibited the lowest overfitting rate among the CNN models. However, its validation accuracy was 70.96\%, indicating that the model struggled to maintain strong performance on unseen data. These results suggest that while deep learning models such as ResNet50 and VGG16 performed well during training, their generalization capabilities still require improvement. 
 
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
-%
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[caso 1]{\includegraphics[width=2.5in]{figs/logo_grupo.png}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[caso 2]{\includegraphics[width=2.5in]{figs/logo_grupo.png}%
-%\label{fig_second_case}}
-%\caption{Latinoware - Congresso Latino-americano de Software Livre e Tecnologias Abertas.}
-%\label{fig_sim2}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
-% labels, the optional argument to \subfloat must be present. If a
-% subcaption is not desired, just leave its contents blank,
-% e.g., \subfloat[].
+As shown in Fig. 6, VGG16 yielded better classification performance for the 'R7' class, achieving a correct prediction rate of 67\%. However, for the 'Other' class, the accuracy was only 37\%. Although its performance in identifying 'R7' was superior, the false positive rate was 63\%, indicating that the model remains inadequate. Among the CNNs evaluated, VGG16 was slightly more effective in classifying the 'R7' growth stage. Nonetheless, all models demonstrated significant difficulty in accurately classifying the 'Other' class, with high false positive rates. To address these issues, future improvements may include hyperparameter tuning, data augmentation techniques, and rebalancing of the training dataset. 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\caption{Confusion Matrix –  Random Forest.}
+\label{fig_sim}
+\end{figure}
+The trained Random Forest model exhibited strong performance, achieving 100\% training accuracy. This result may indicate overfitting. On the validation set, the model reached 86.45\% accuracy. As shown in Fig. 7, the model achieved a precision rate of 83.82\% for correctly idenfying negative instances (class 0 represents the "Other" class). The false positive rate for this class was 16.18\%. For positive instances (class 1, corresponding to “R7”), the precision was 93.02\%, and the false negative rate was 6.98\%. 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\caption{Final Training Results - Random Forest.}
+\label{fig_sim}
+\end{figure}
+ 
 
-\section{Conclusão}
-Descreva aqui as conclusões sobre o trabalho apresentado.
+As depicted Fig. 8, the Random Forest model achieved 100.00\% training accuracy and 86.45\% validation accuracy. The classification report for the validation set includes precision, recal, and F1-score metrics for class 0 and 1, with respective values of 0.95, 0.82 and 0.88 for the 'Other' class, and 0.77, 0.94 and 0.85 for the 'R7' class. The o verall metrics include an accuracy of 0.86, as well as macro and weighted averages of 0.86/0.88/0.87 and 0.88/0.86/0.87 for precision/recall/F1-score, respectively. These results indicate that the model performs well overall, although its precision in validation is lower than in training. 
+\section*{Conclusion }
+The results obtained in this study highlight the importance of training multiple models for image classification tasks. While convolutional neural networks (CNNs) achieved high training accuracy, they demonstrated limitations in generalization. Validation accuracy ranged from 70.75\% (InceptionV3) to 73.55\% (ResNet50), indicating potential overfitting—where models effectively memorize the training set but struggle to perform on unseen data. 
 
+In constrast, the Random Forest model, trained using features extracted from ResNet50, achieved 100\% accuracy on the training set and maintained superior validation performance (86.45\%), indicating better generalization capability. 
 
+The analysis of the confision matrix f urther supports the effectiveness of the Random Forest model, which demonstrated a balanced trade-off between precision and recall. For the 'Other' class, the model achieved 95\% precision and 82\% recall, w hile for the “R7” class, precision and recall were 77\% and 94\%, respectively. These results indicate consistent performance in correctly classifying both positive and negative instances. 
 
-
-% conference papers do not normally have an appendix
-
-% use section* for acknowledgment
-\section*{Agradecimentos}
-
-Coloque aqui seus agradecimentos.
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
+In conclusion, although CNNs are highly effective for deep learning tasks, traditional machine learning models such as Random Forest—when combined with feature extraction techniques—can offer competitive performance, particularly in terms of generalization. Future research should explore strategies to mitigate overfitting in CNNs, including
 \bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-\bibliography{example}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-%\begin{thebibliography}{1}
-%
-%\bibitem{IEEEhowto:kopka}
-%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\bibliography{example} 
 
-%\end{thebibliography}
-
-
-
-
-% that's all folks
 \end{document}
 
 
