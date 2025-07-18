@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex fenotipagen"] 1752863660.83997 "fenotipagen.aux" "fenotipagen.bbl" "fenotipagen" 1752863661.05229 0
+["bibtex fenotipagen"] 1752864762.23546 "fenotipagen.aux" "fenotipagen.bbl" "fenotipagen" 1752864955.31874 0
   "./IEEEtran.bst" 1749500140 59215 bc5380b3434a66b895bbc75d3d380540 ""
   "./example.bib" 1752863659.7167 5087 f16d896e152cbf06c525b9d00f6cac9b ""
-  "fenotipagen.aux" 1752863418.64198 3233 2cc5a1c9e412e4e3201b1edb190c4927 "pdflatex"
+  "fenotipagen.aux" 1752864954.54105 4069 48cd2876219aca20db9e2acd19305b01 "pdflatex"
   (generated)
   "fenotipagen.bbl"
   "fenotipagen.blg"
   (rewritten before read)
-["pdflatex"] 1752863415.57599 "fenotipagen.tex" "fenotipagen.pdf" "fenotipagen" 1752863661.05242 2
+["pdflatex"] 1752864952.71851 "fenotipagen.tex" "fenotipagen.pdf" "fenotipagen" 1752864955.31948 0
   "/etc/texmf/web2c/texmf.cnf" 1751065331.72502 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -20,6 +20,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm" 1136768653 4408 25b74d011a4c66b7f212c0cc3c90061b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm" 1136768653 2680 312a2d12b1f1df8ee0212e7ba1962402 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm" 1136768653 2288 f478fc8fed18759effb59f3dad7f3084 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm" 1136768653 4640 532ca3305aad10cc01d769f3f91f1029 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmro7t.tfm" 1136768653 2212 ddd058020f70d31af08b213e40125079 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -31,11 +32,13 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb" 1136849748 44656 0cbca70e0534538582128f6b54593cca ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 6dab18b61c907687b520c72847215a68 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb" 1136849748 45458 a3faba884469519614ca56ba5f6b1de1 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf" 1136768653 1372 788387fea833ef5963f4c5bffe33eb89 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmbi7t.vf" 1136768653 1384 6ac0f8b839230f5d9389287365b243c0 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf" 1136768653 1380 0ea3a3370054be6da6acd929ec569f06 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf" 1136768653 3556 8a9a6dcbcd146ef985683f677f4758a6 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf" 1136768653 1948 7330aeef3af211edff3b35fb2c12a0fd ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf" 1136768653 1384 a9d8adaf491ce34e5fba99dc7bbe5f39 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1734129479 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -142,9 +145,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1752769467 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1752769614 3345713 9876cc114e0ca3402959de0919699578 ""
   "IEEEtran.cls" 1749500140 282009 b3ef2366fea9c3670678b6bd58854c9a ""
-  "fenotipagen.aux" 1752863418.64198 3233 2cc5a1c9e412e4e3201b1edb190c4927 "pdflatex"
-  "fenotipagen.bbl" 1752863661.03674 877 ff870bcb4c5888cb430f09fb5d82ad80 "bibtex fenotipagen"
-  "fenotipagen.tex" 1752863413.76184 23362 136f34f6b5f04c08f0fcc755e7e9f502 ""
+  "fenotipagen.aux" 1752864954.54105 4069 48cd2876219aca20db9e2acd19305b01 "pdflatex"
+  "fenotipagen.bbl" 1752864762.40365 4719 8b61bfa01c1266379e02646d21a71a0b "bibtex fenotipagen"
+  "fenotipagen.tex" 1752864952.18099 23662 8e1c7b7677b0d9637bce7a42543f9f35 ""
   "figs/api.jpeg" 1752780387.08465 18266 8967f29cf7c6fc4c863e5a1dfb11c447 ""
   "figs/comparacion.jpeg" 1752781552.77031 81375 3682a451fc846b301682e855417317dd ""
   "figs/image_exemple.jpeg" 1752856385.89215 51659 74bc760b617082b7f205cd189eebbfb1 ""
