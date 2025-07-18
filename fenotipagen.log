@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  18 JUL 2025 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -646,35 +646,7 @@ Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (./fenotipagen.aux
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-
-LaTeX Warning: Label `fig_sim' multiply defined.
-
-)
+) (./fenotipagen.aux)
 \openout1 = `fenotipagen.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -843,7 +815,7 @@ Package pdftex.def Info: figs/image_exemple.jpeg  used on input line 178.
 
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 184.
+Package pdftex.def Info: headerimg.png  used on input line 182.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -854,7 +826,7 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 184.
+Package pdftex.def Info: footerimg.png  used on input line 182.
 (pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
 [2 <./figs/randon_forest.jpeg> <./figs/api.jpeg>]
 
@@ -865,7 +837,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 210.
+Package pdftex.def Info: headerimg.png  used on input line 211.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -876,46 +848,37 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 210.
+Package pdftex.def Info: footerimg.png  used on input line 211.
 (pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
 [3 <./figs/comparacion.jpeg> <./figs/image_exemple.jpeg>]
-File: figs/image_exemple.jpeg Graphic file (type jpg)
-<use figs/image_exemple.jpeg>
-Package pdftex.def Info: figs/image_exemple.jpeg  used on input line 215.
-(pdftex.def)             Requested size: 180.67499pt x 102.25967pt.
-File: figs/image_exemple.jpeg Graphic file (type jpg)
-<use figs/image_exemple.jpeg>
-Package pdftex.def Info: figs/image_exemple.jpeg  used on input line 222.
-(pdftex.def)             Requested size: 180.67499pt x 102.25967pt.
-File: figs/image_exemple.jpeg Graphic file (type jpg)
-<use figs/image_exemple.jpeg>
-Package pdftex.def Info: figs/image_exemple.jpeg  used on input line 229.
-(pdftex.def)             Requested size: 180.67499pt x 102.25967pt.
+<figs/intercecion_v3resnet_50.png, id=28, 679.53876pt x 294.09875pt>
+File: figs/intercecion_v3resnet_50.png Graphic file (type png)
+<use figs/intercecion_v3resnet_50.png>
+Package pdftex.def Info: figs/intercecion_v3resnet_50.png  used on input line 2
+16.
+(pdftex.def)             Requested size: 180.67499pt x 78.19157pt.
+<figs/intercecion_v3.png, id=29, 850.17625pt x 366.36874pt>
+File: figs/intercecion_v3.png Graphic file (type png)
+<use figs/intercecion_v3.png>
+Package pdftex.def Info: figs/intercecion_v3.png  used on input line 223.
+(pdftex.def)             Requested size: 180.67499pt x 77.8565pt.
+<figs/intercecion_vGG16.png, id=30, 831.105pt x 359.3425pt>
+File: figs/intercecion_vGG16.png Graphic file (type png)
+<use figs/intercecion_vGG16.png>
+Package pdftex.def Info: figs/intercecion_vGG16.png  used on input line 230.
+(pdftex.def)             Requested size: 180.67499pt x 78.11797pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-File: figs/image_exemple.jpeg Graphic file (type jpg)
-<use figs/image_exemple.jpeg>
-Package pdftex.def Info: figs/image_exemple.jpeg  used on input line 238.
-(pdftex.def)             Requested size: 180.67499pt x 102.25967pt.
-File: figs/image_exemple.jpeg Graphic file (type jpg)
-<use figs/image_exemple.jpeg>
-Package pdftex.def Info: figs/image_exemple.jpeg  used on input line 245.
-(pdftex.def)             Requested size: 180.67499pt x 102.25967pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+<figs/confusionRF.png, id=31, 1014.79124pt x 439.6425pt>
+File: figs/confusionRF.png Graphic file (type png)
+<use figs/confusionRF.png>
+Package pdftex.def Info: figs/confusionRF.png  used on input line 240.
+(pdftex.def)             Requested size: 180.67499pt x 78.27356pt.
 
 
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 249.
+Package pdftex.def Info: headerimg.png  used on input line 246.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -926,9 +889,11 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 249.
+Package pdftex.def Info: footerimg.png  used on input line 246.
 (pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
-[4]
+[4 <./figs/intercecion_v3resnet_50.png (PNG copy)> <./figs/intercecion_v3.png (
+PNG copy)> <./figs/intercecion_vGG16.png (PNG copy)> <./figs/confusionRF.png (P
+NG copy)>]
 
 (./fenotipagen.bbl)
 
@@ -946,7 +911,7 @@ Before submitting the final camera ready copy, remember to:
 
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 263.
+Package pdftex.def Info: headerimg.png  used on input line 279.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -957,23 +922,19 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 263.
+Package pdftex.def Info: footerimg.png  used on input line 279.
 (pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
 [5] (./fenotipagen.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 16584 strings out of 473197
- 335491 string characters out of 5718605
- 810933 words of memory out of 5000000
- 39555 multiletter control sequences out of 15000+600000
+ 16621 strings out of 473197
+ 336536 string characters out of 5718605
+ 815091 words of memory out of 5000000
+ 39592 multiletter control sequences out of 15000+600000
  592623 words of font info for 94 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  84i,18n,93p,1546b,890s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -982,10 +943,10 @@ Here is how much of TeX's memory you used:
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on fenotipagen.pdf (5 pages, 918661 bytes).
+Output written on fenotipagen.pdf (5 pages, 1076944 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

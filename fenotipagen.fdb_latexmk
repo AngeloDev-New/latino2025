@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex fenotipagen"] 1752864762.23546 "fenotipagen.aux" "fenotipagen.bbl" "fenotipagen" 1752864955.31874 0
+["bibtex fenotipagen"] 1752873247.03877 "fenotipagen.aux" "fenotipagen.bbl" "fenotipagen" 1752873634.21911 0
   "./IEEEtran.bst" 1749500140 59215 bc5380b3434a66b895bbc75d3d380540 ""
-  "./example.bib" 1752863659.7167 5087 f16d896e152cbf06c525b9d00f6cac9b ""
-  "fenotipagen.aux" 1752864954.54105 4069 48cd2876219aca20db9e2acd19305b01 "pdflatex"
+  "./example.bib" 1752866354.04412 5237 b259a4a666e2e30c97e130ba364b068a ""
+  "fenotipagen.aux" 1752873633.49499 4162 6df2e17e8af12c035dd5fa282cdf8ffa "pdflatex"
   (generated)
   "fenotipagen.bbl"
   "fenotipagen.blg"
   (rewritten before read)
-["pdflatex"] 1752864952.71851 "fenotipagen.tex" "fenotipagen.pdf" "fenotipagen" 1752864955.31948 0
+["pdflatex"] 1752873631.29329 "fenotipagen.tex" "fenotipagen.pdf" "fenotipagen" 1752873634.21966 0
   "/etc/texmf/web2c/texmf.cnf" 1751065331.72502 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -145,12 +145,16 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1752769467 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1752769614 3345713 9876cc114e0ca3402959de0919699578 ""
   "IEEEtran.cls" 1749500140 282009 b3ef2366fea9c3670678b6bd58854c9a ""
-  "fenotipagen.aux" 1752864954.54105 4069 48cd2876219aca20db9e2acd19305b01 "pdflatex"
-  "fenotipagen.bbl" 1752864762.40365 4719 8b61bfa01c1266379e02646d21a71a0b "bibtex fenotipagen"
-  "fenotipagen.tex" 1752864952.18099 23662 8e1c7b7677b0d9637bce7a42543f9f35 ""
+  "fenotipagen.aux" 1752873633.49499 4162 6df2e17e8af12c035dd5fa282cdf8ffa "pdflatex"
+  "fenotipagen.bbl" 1752873247.23501 4879 8983eae46fe5a42adf13269d3af9e85f "bibtex fenotipagen"
+  "fenotipagen.tex" 1752873630.7309 24255 25a303150668abcaf63e454b575b0181 ""
   "figs/api.jpeg" 1752780387.08465 18266 8967f29cf7c6fc4c863e5a1dfb11c447 ""
   "figs/comparacion.jpeg" 1752781552.77031 81375 3682a451fc846b301682e855417317dd ""
+  "figs/confusionRF.png" 1752872361.62263 49133 11bb1a10262713bdba6e262bb1e17066 ""
   "figs/image_exemple.jpeg" 1752856385.89215 51659 74bc760b617082b7f205cd189eebbfb1 ""
+  "figs/intercecion_v3.png" 1752869159.02103 35699 11778cd1ea6bcc76600bc5be607119f8 ""
+  "figs/intercecion_v3resnet_50.png" 1752869660.45983 37508 65002e476d9d59d1b3b8f65194ab55cb ""
+  "figs/intercecion_vGG16.png" 1752871787.63526 33472 1af1537f8aca56cf669a8eb2f59f8bef ""
   "figs/randon_forest.jpeg" 1752778348.3286 20977 2fb49b1eff5dfa0ea443536031e78f46 ""
   "footerimg.png" 1749500140 500954 aee2ceaa22d3880e20b691a5c079ac96 ""
   "headerimg.png" 1749500140 905381 fa7714101840d270b13ad1cc3f4fee65 ""

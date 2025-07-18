@@ -136,7 +136,7 @@ Artificial Neural Networks (ANNs) have been widely applied and successfully impl
 \centering
 \includegraphics[width=2.5in]{figs/randon_forest.jpeg}
 \caption{The Random Forest (RF) algorithm}
-\label{fig_sim}
+\label{fig:randonf}
 \end{figure}
 In another study \cite{tesselle2024mlnet}, CNNs were used to detect soybean diseases, but challenges were encountered in distinguishing between visually similar disease symptoms, which may lead to misclassification. These issues highlight the importance of a robust and high-quality dataset, with well-labeled images that cover all possible variations. Nevertheless, CNNs can be effectively trained when the dataset is diverse and capable of capturing relevant visual nuances. 
 
@@ -145,7 +145,7 @@ In another study \cite{tesselle2024mlnet}, CNNs were used to detect soybean dise
 \centering
 \includegraphics[width=2.5in]{figs/api.jpeg}
 \caption{Integration between RF, API, and App}
-\label{fig_sim}
+\label{fig:api}
 \end{figure}
 Before the training and the decision on the best classification technology to be integrated between the mobile app and the segmentation technology, the following technologies were used: 
 \begin{itemize}
@@ -160,16 +160,16 @@ This research is experimental and applied in nature, with the objective of train
 \centering
 \includegraphics[width=2.5in]{figs/comparacion.jpeg}
 \caption{Distribution of images in training and validation classes. }
-\label{fig_sim}
+\label{fig:trainVal}
 \end{figure}
-For the training of CNN and Random Forest (RF) models, 2,301 images of different phenological stages were selected for the training set and 2,280 images for the validation set, as illustrated in Fig. 1. These images played an important role in ensuring that the models were capable of generalizing and performing accurate classifications, especially regarding phenological stages above R7. The images were carefully captured, taking into consideration the need to avoid the presence of unwanted elements, such as shadows, trees, buildings, and sky, which could introduce noise and compromise the quality of the training. 
+For the training of CNN and Random Forest (RF) models, 2,301 images of different phenological stages were selected for the training set and 2,280 images for the validation set, as illustrated in ~\ref{fig:trainVal}. These images played an important role in ensuring that the models were capable of generalizing and performing accurate classifications, especially regarding phenological stages above R7. The images were carefully captured, taking into consideration the need to avoid the presence of unwanted elements, such as shadows, trees, buildings, and sky, which could introduce noise and compromise the quality of the training. 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=2.5in]{figs/image_exemple.jpeg}
 \caption{Implemented Neural Networks VGG16, Inception3, ResNet50.}
-\label{fig_sim}
+\label{fig:VGG16_ResNet50}
 \end{figure}
-Fig. 3 shows the implementation of the VGG16, Inception3, and ResNet50 CNNs. These CNN architectures are popular and contain particularities that make them different and are used for different types of image classification problems. VGGNet, developed by Simonyan and Zisserman in 2015, is a CNN architecture that exclusively uses 3×3 filters in its convolutional layers. The VGG16 version, composed of 16 layers, demonstrated high accuracy in image classification. However, its depth results in high memory consumption and significant computational demand \cite{goodfellow2016deep}. 
+~\ref{fig:VGG16_ResNet50} shows the implementation of the VGG16, Inception3, and ResNet50 CNNs. These CNN architectures are popular and contain particularities that make them different and are used for different types of image classification problems. VGGNet, developed by Simonyan and Zisserman in 2015, is a CNN architecture that exclusively uses 3×3 filters in its convolutional layers. The VGG16 version, composed of 16 layers, demonstrated high accuracy in image classification. However, its depth results in high memory consumption and significant computational demand \cite{goodfellow2016deep}. 
 InceptionV3 is a more complex CNN, proposed by Google. The differential of this architecture lies in its use of Inception modules, which apply different filter sizes (such as 1x1, 3x3, 5x5) and dimensionality reduction techniques, such as 1x1 convolution, allowing the network to extract a greater number of features efficiently. The main advantage of InceptionV3 is its ability to balance accuracy and computational efficiency, making it faster and more effective compared to simpler networks, such as VGG16 \cite{akgun2023working}. Additionally, it is better able to handle images of different scales and contexts, making it useful for classifying complex images, such as those found in agricultural contexts. 
 ResNet50 is one of the most innovative architectures, known for introducing residual blocks. These blocks allow information to flow directly from one layer to another, without the need for intermediate passages, which helps avoid the problem of network degradation. It is composed of 50 layers and was designed to handle extremely deep networks without losing performance. 
 All three architectures (VGG16, InceptionV3, and ResNet50) were trained using an 80\% split for training and 20\% for testing. After training, a validation set was used to monitor the model's performance and adjust hyperparameters during the training process, ensuring that the model generalized well and was not merely overfitting to the training data. This approach helps ensure that the model learns the relevant characteristics of the data without losing its generalization capacity for new data.
@@ -177,10 +177,11 @@ All three architectures (VGG16, InceptionV3, and ResNet50) were trained using an
 \centering
 \includegraphics[width=2.5in]{figs/image_exemple.jpeg}
 \caption{Random Forest feature extraction model}
-Random Forest, as illustrated in Fig. 4, is a machine learning model based on decision trees. It builds multiple trees and combines their results to obtain more robust predictions. \cite{kohersen2017random}
-
-\label{fig_sim}
+\label{fig:randomforest}
 \end{figure}
+
+Random Forest, as illustrated in Fig.~\ref{fig:randomforest}, is a machine learning model based on decision trees. It builds multiple trees and combines their results to obtain more robust predictions \cite{hastie2009elements}.
+
 \section*{Results and Discussion}
 Table II presents the accurate results obtained for the training and validation datasets. 
 \begin{table}[!h]
@@ -212,43 +213,58 @@ These results suggest that, despite the complexity and strong fitting performanc
 Furthermore, confusion matrices for the VGG16, ResNet50, and InceptionV3 models were analyzed to further evaluate the performance of these algorithms.
 \begin{figure}[!h]
 \centering
-\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\includegraphics[width=2.5in]{figs/intercecion_v3resnet_50.png}
 \caption{Confusion Matrix – ResNet50. }
-\label{fig_sim}
+\label{fig:ResNet50}
 \end{figure}
-The ResNet50 model achieved a training accuracy of 94.51\%. However, its validation accuracy dropped to 73.55\%, suggesting potential overfitting on the training data. The confusion matrix for ResNet50, shown in Fig. 4, revealed a balanced distribution between the classes, with a correct classification rate of 42\% for the 'Other' class and 58\% for the 'R7' class. These results indicate challenges in accurate class identification, leading to suboptimal model performance. 
+The ResNet50 model achieved a training accuracy of 94.51\%. However, its validation accuracy dropped to 73.55\%, suggesting potential overfitting on the training data. The confusion matrix for ResNet50, shown in ~\ref{fig:ResNet50}, revealed a balanced distribution between the classes, with a correct classification rate of 42\% for the 'Other' class and 58\% for the 'R7' class. These results indicate challenges in accurate class identification, leading to suboptimal model performance. 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
-\caption{Confusion Matrix –  Incetion V3.  }
-\label{fig_sim}
+\includegraphics[width=2.5in]{figs/intercecion_v3.png}
+\caption{Confusion Matrix –  Inception V3.  }
+\label{fig:InceptionV3}
 \end{figure}
-The InceptionV3 model demonstrated excellent performance on the training dataset, achieving an accuracy of 98.37\%. However, the validation accuracy decreased to 70.75\%, indicating overfitting. As illustrated in Fig. 5, the confusion matrix shows a similar pattern to that of ResNet50, with a 41\% accuracy for the 'Other' class and 59\% for the 'R7' class. The false positive rate was 59\%, while the false negative rate was 41\%. InceptionV3 also struggles with distinguishing between classes, particularly in classifying instances of the 'Other' class. 
+The InceptionV3 model demonstrated excellent performance on the training dataset, achieving an accuracy of 98.37\%. However, the validation accuracy decreased to 70.75\%, indicating overfitting. As illustrated in ~\ref{fig:InceptionV3}, the confusion matrix shows a similar pattern to that of ResNet50, with a 41\% accuracy for the 'Other' class and 59\% for the 'R7' class. The false positive rate was 59\%, while the false negative rate was 41\%. InceptionV3 also struggles with distinguishing between classes, particularly in classifying instances of the 'Other' class. 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\includegraphics[width=2.5in]{figs/intercecion_vGG16.png}
 \caption{Confusion Matrix –  VGG16. }
-\label{fig_sim}
+\label{fig:VGG16}
 \end{figure}
+
 The VGG16 model achieved the highest training accuracy, with 98.72\%, and exhibited the lowest overfitting rate among the CNN models. However, its validation accuracy was 70.96\%, indicating that the model struggled to maintain strong performance on unseen data. These results suggest that while deep learning models such as ResNet50 and VGG16 performed well during training, their generalization capabilities still require improvement. 
 
-As shown in Fig. 6, VGG16 yielded better classification performance for the 'R7' class, achieving a correct prediction rate of 67\%. However, for the 'Other' class, the accuracy was only 37\%. Although its performance in identifying 'R7' was superior, the false positive rate was 63\%, indicating that the model remains inadequate. Among the CNNs evaluated, VGG16 was slightly more effective in classifying the 'R7' growth stage. Nonetheless, all models demonstrated significant difficulty in accurately classifying the 'Other' class, with high false positive rates. To address these issues, future improvements may include hyperparameter tuning, data augmentation techniques, and rebalancing of the training dataset. 
+As shown in ~\ref{fig:VGG16}, VGG16 yielded better classification performance for the 'R7' class, achieving a correct prediction rate of 67\%. However, for the 'Other' class, the accuracy was only 37\%. Although its performance in identifying 'R7' was superior, the false positive rate was 63\%, indicating that the model remains inadequate. Among the CNNs evaluated, VGG16 was slightly more effective in classifying the 'R7' growth stage. Nonetheless, all models demonstrated significant difficulty in accurately classifying the 'Other' class, with high false positive rates. To address these issues, future improvements may include hyperparameter tuning, data augmentation techniques, and rebalancing of the training dataset. 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
+\includegraphics[width=2.5in]{figs/confusionRF.png}
 \caption{Confusion Matrix –  Random Forest.}
-\label{fig_sim}
+\label{fig:confusionRF}
 \end{figure}
-The trained Random Forest model exhibited strong performance, achieving 100\% training accuracy. This result may indicate overfitting. On the validation set, the model reached 86.45\% accuracy. As shown in Fig. 7, the model achieved a precision rate of 83.82\% for correctly idenfying negative instances (class 0 represents the "Other" class). The false positive rate for this class was 16.18\%. For positive instances (class 1, corresponding to “R7”), the precision was 93.02\%, and the false negative rate was 6.98\%. 
-\begin{figure}[!h]
-\centering
-\includegraphics[width=2.5in]{figs/image_exemple.jpeg}
-\caption{Final Training Results - Random Forest.}
-\label{fig_sim}
-\end{figure}
- 
 
-As depicted Fig. 8, the Random Forest model achieved 100.00\% training accuracy and 86.45\% validation accuracy. The classification report for the validation set includes precision, recal, and F1-score metrics for class 0 and 1, with respective values of 0.95, 0.82 and 0.88 for the 'Other' class, and 0.77, 0.94 and 0.85 for the 'R7' class. The o verall metrics include an accuracy of 0.86, as well as macro and weighted averages of 0.86/0.88/0.87 and 0.88/0.86/0.87 for precision/recall/F1-score, respectively. These results indicate that the model performs well overall, although its precision in validation is lower than in training. 
+The trained Random Forest model exhibited strong performance, achieving 100\% training accuracy. This result may indicate overfitting. On the validation set, the model reached 86.45\% accuracy. As shown in ~\ref{fig:confusionRF}, the model achieved a precision rate of 83.82\% for correctly idenfying negative instances (class 0 represents the "Other" class). The false positive rate for this class was 16.18\%. For positive instances (class 1, corresponding to “R7”), the precision was 93.02\%, and the false negative rate was 6.98\%. 
+
+\begin{table}[!h]
+\renewcommand{\arraystretch}{1.3}
+\caption{Relatório de Classificação do Modelo Random Forest (Validação)}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Classe} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
+\hline
+0 & 0.95 & 0.82 & 0.88 & 1378 \\
+1 & 0.77 & 0.94 & 0.85 & 902 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.86} & 2280 \\
+\hline
+\textbf{Macro Avg} & 0.86 & 0.88 & 0.86 & 2280 \\
+\textbf{Weighted Avg} & 0.88 & 0.86 & 0.87 & 2280 \\
+\hline
+\end{tabular}
+\label{tab:classificacao_rf}
+\end{table}
+
+
+As depicted ~\ref{tab:classificacao_rf}, the Random Forest model achieved 100.00\% training accuracy and 86.45\% validation accuracy. The classification report for the validation set includes precision, recal, and F1-score metrics for class 0 and 1, with respective values of 0.95, 0.82 and 0.88 for the 'Other' class, and 0.77, 0.94 and 0.85 for the 'R7' class. The o verall metrics include an accuracy of 0.86, as well as macro and weighted averages of 0.86/0.88/0.87 and 0.88/0.86/0.87 for precision/recall/F1-score, respectively. These results indicate that the model performs well overall, although its precision in validation is lower than in training. 
 \section*{Conclusion }
 The results obtained in this study highlight the importance of training multiple models for image classification tasks. While convolutional neural networks (CNNs) achieved high training accuracy, they demonstrated limitations in generalization. Validation accuracy ranged from 70.75\% (InceptionV3) to 73.55\% (ResNet50), indicating potential overfitting—where models effectively memorize the training set but struggle to perform on unseen data. 
 

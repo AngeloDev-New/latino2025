@@ -105,10 +105,12 @@ D.~Akgun, \emph{Working Principles of Convolutional Neural Networks in
   Keras}.\hskip 1em plus 0.5em minus 0.4em\relax Ankara: Platanus Publishing,
   2023.
 
-\bibitem{kohersen2017random}
+\bibitem{hastie2009elements}
 \BIBentryALTinterwordspacing
-W.~Kohersen, ``Random forest simple explanation,'' 2017. [Online]. Available:
-  \url{https://medium.com}
+T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}, 2nd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 2009. [Online]. Available:
+  \url{https://hastie.su.domains/ElemStatLearn/}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

@@ -71,3 +71,29 @@
 - \cite{cho2021desempenho} - pode ser útil para discussão sobre Random Forest
 - \cite{farias_estadio} - pode ser útil para discussão sobre estádios fenológicos
 - \cite{hosaki2021ensinando} - pode ser útil para discussão sobre Deep Learning
+
+
+✅ Pontos Positivos:
+
+    Tema relevante para agricultura;
+
+    Coleta prática de dados no campo;
+
+    Integração em app móvel (ainda que superficial).
+
+🚫 Principais falhas técnicas e científicas:
+
+    Desleixo formal: presença de conteúdo de template, erros gramaticais, figuras ilegíveis, formatação ruim;
+
+    Metodologia rasa: sem análise estatística da base de dados, ausência de validação cruzada e tuning de hiperparâmetros;
+
+    Comparação injusta de modelos: CNNs sofreram overfitting e RF foi turbinado por features extraídas da ResNet50 sem detalhamento metodológico;
+
+    Ausência de análise estatística robusta: sem intervalo de confiança, sem ANOVA, sem McNemar, sem análise de variância inter-modelos;
+
+    Descuido na revisão bibliográfica: excesso de fontes em português e uso de fontes não científicas (ex.: Medium);
+
+    Aplicação prática pouco explorada: o app é citado sem métricas ou testes reais.
+
+📝 Síntese da Justificativa do Parecer:
+O artigo não atinge os critérios mínimos esperados para publicação em função de deficiências graves de revisão, análise estatística, descrição metodológica e rigor científico. Embora o tema seja relevante, a execução metodológica impede a reprodutibilidade e a validação dos resultados, o que compromete significativamente a qualidade científica do estudo.
