@@ -1,0 +1,73 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{create\PYGZus{}vgg16\PYGZus{}model}\PYG{p}{(}\PYG{n}{input\PYGZus{}shape}\PYG{o}{=}\PYG{p}{(}\PYG{n}{IMG\PYGZus{}HEIGHT}\PYG{p}{,} \PYG{n}{IMG\PYGZus{}WIDTH}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{,} \PYG{n}{num\PYGZus{}classes}\PYG{o}{=}\PYG{n}{train\PYGZus{}generator}\PYG{o}{.}\PYG{n}{num\PYGZus{}classes}\PYG{p}{)}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} Carregar o modelo VGG16 pré\PYGZhy{}treinado com pesos do ImageNet, sem a camada de classificação final}
+    \PYG{n}{base\PYGZus{}model} \PYG{o}{=} \PYG{n}{VGG16}\PYG{p}{(}\PYG{n}{weights}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{imagenet}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{include\PYGZus{}top}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{input\PYGZus{}shape}\PYG{o}{=}\PYG{n}{input\PYGZus{}shape}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Congelar as camadas do modelo base (VGG16)}
+    \PYG{n}{base\PYGZus{}model}\PYG{o}{.}\PYG{n}{trainable} \PYG{o}{=} \PYG{k+kc}{False}
+
+    \PYG{c+c1}{\PYGZsh{} Criar o modelo sequencial}
+    \PYG{n}{model} \PYG{o}{=} \PYG{n}{Sequential}\PYG{p}{(}\PYG{p}{[}
+        \PYG{n}{base\PYGZus{}model}\PYG{p}{,}
+        \PYG{n}{Flatten}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Achatar as características extraídas pela VGG16}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{512}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{relu}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{Dropout}\PYG{p}{(}\PYG{l+m+mf}{0.4}\PYG{p}{)}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Reduzir overfitting}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{256}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{relu}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{Dropout}\PYG{p}{(}\PYG{l+m+mf}{0.3}\PYG{p}{)}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Mais dropout para regularização}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{n}{num\PYGZus{}classes}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{softmax}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Camada de saída}
+    \PYG{p}{]}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Compilar o modelo}
+    \PYG{n}{model}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}\PYG{n}{optimizer}\PYG{o}{=}\PYG{n}{Adam}\PYG{p}{(}\PYG{n}{learning\PYGZus{}rate}\PYG{o}{=}\PYG{l+m+mf}{0.0001}\PYG{p}{)}\PYG{p}{,} \PYG{n}{loss}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{categorical\PYGZus{}crossentropy}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{metrics}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{accuracy}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
+
+    \PYG{k}{return} \PYG{n}{model}
+
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{create\PYGZus{}inceptionv3\PYGZus{}model}\PYG{p}{(}\PYG{n}{input\PYGZus{}shape}\PYG{o}{=}\PYG{p}{(}\PYG{n}{IMG\PYGZus{}HEIGHT}\PYG{p}{,} \PYG{n}{IMG\PYGZus{}WIDTH}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{,} \PYG{n}{num\PYGZus{}classes}\PYG{o}{=}\PYG{n}{train\PYGZus{}generator}\PYG{o}{.}\PYG{n}{num\PYGZus{}classes}\PYG{p}{)}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} Carregar o modelo InceptionV3 pré\PYGZhy{}treinado com pesos do ImageNet, sem a camada de classificação final}
+    \PYG{n}{base\PYGZus{}model} \PYG{o}{=} \PYG{n}{InceptionV3}\PYG{p}{(}\PYG{n}{weights}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{imagenet}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{include\PYGZus{}top}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{input\PYGZus{}shape}\PYG{o}{=}\PYG{n}{input\PYGZus{}shape}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Congelar as camadas do modelo base (InceptionV3)}
+    \PYG{n}{base\PYGZus{}model}\PYG{o}{.}\PYG{n}{trainable} \PYG{o}{=} \PYG{k+kc}{False}
+
+    \PYG{c+c1}{\PYGZsh{} Criar o modelo sequencial}
+    \PYG{n}{model} \PYG{o}{=} \PYG{n}{Sequential}\PYG{p}{(}\PYG{p}{[}
+        \PYG{n}{base\PYGZus{}model}\PYG{p}{,}
+        \PYG{n}{GlobalAveragePooling2D}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Camada de pooling global para reduzir as dimensões}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{512}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{relu}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{Dropout}\PYG{p}{(}\PYG{l+m+mf}{0.4}\PYG{p}{)}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Reduzir overfitting}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{256}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{relu}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{Dropout}\PYG{p}{(}\PYG{l+m+mf}{0.3}\PYG{p}{)}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Mais dropout para regularização}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{n}{num\PYGZus{}classes}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{softmax}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Camada de saída}
+    \PYG{p}{]}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Compilar o modelo}
+    \PYG{n}{model}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}\PYG{n}{optimizer}\PYG{o}{=}\PYG{n}{Adam}\PYG{p}{(}\PYG{n}{learning\PYGZus{}rate}\PYG{o}{=}\PYG{l+m+mf}{0.0001}\PYG{p}{)}\PYG{p}{,} \PYG{n}{loss}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{categorical\PYGZus{}crossentropy}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{metrics}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{accuracy}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
+
+    \PYG{k}{return} \PYG{n}{model}
+
+    \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{create\PYGZus{}resnet\PYGZus{}model}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{base\PYGZus{}model} \PYG{o}{=} \PYG{n}{ResNet50}\PYG{p}{(}\PYG{n}{weights}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{imagenet}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{include\PYGZus{}top}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{input\PYGZus{}shape}\PYG{o}{=}\PYG{p}{(}\PYG{n}{IMG\PYGZus{}HEIGHT}\PYG{p}{,} \PYG{n}{IMG\PYGZus{}WIDTH}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{)}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Congela as primeiras camadas da ResNet para preservar os pesos pré\PYGZhy{}treinados}
+    \PYG{n}{base\PYGZus{}model}\PYG{o}{.}\PYG{n}{trainable} \PYG{o}{=} \PYG{k+kc}{False}
+
+    \PYG{n}{model} \PYG{o}{=} \PYG{n}{Sequential}\PYG{p}{(}\PYG{p}{[}
+        \PYG{n}{base\PYGZus{}model}\PYG{p}{,}
+        \PYG{n}{GlobalAveragePooling2D}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{BatchNormalization}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{l+m+mi}{512}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{relu}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{BatchNormalization}\PYG{p}{(}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{Dropout}\PYG{p}{(}\PYG{l+m+mf}{0.5}\PYG{p}{)}\PYG{p}{,}
+        \PYG{n}{Dense}\PYG{p}{(}\PYG{n}{train\PYGZus{}generator}\PYG{o}{.}\PYG{n}{num\PYGZus{}classes}\PYG{p}{,} \PYG{n}{activation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{softmax}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{p}{]}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Usa Adam com um learning rate menor para melhor estabilidade}
+    \PYG{n}{model}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}\PYG{n}{optimizer}\PYG{o}{=}\PYG{n}{Adam}\PYG{p}{(}\PYG{n}{learning\PYGZus{}rate}\PYG{o}{=}\PYG{l+m+mf}{1e\PYGZhy{}4}\PYG{p}{)}\PYG{p}{,}
+                  \PYG{n}{loss}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{categorical\PYGZus{}crossentropy}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+                  \PYG{n}{metrics}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{accuracy}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
+
+    \PYG{k}{return} \PYG{n}{model}
+
+
+\end{MintedVerbatim}

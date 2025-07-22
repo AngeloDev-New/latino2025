@@ -1,0 +1,14 @@
+## function to extract features using ResNet50
+def extract_features(generator):
+    base_model = ResNet50(weights='imagenet', include_top=False, pooling='avg')
+    features = []
+    labels = []
+
+    for batch, label_batch in generator:
+        batch_features = base_model.predict(batch)
+        features.extend(batch_features)
+        labels.extend(label_batch)
+        if len(features) >= generator.samples:  # Avoid infinite loop
+            break
+    return np.array(features), np.array(labels)
+% \end{minted}
