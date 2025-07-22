@@ -128,9 +128,43 @@ O modelo foi treinado no Google Colab usando PyTorch e Hugging Face Transformers
 Para a conversão de texto em fala (TTS), foi usado o modelo facebook/mms-tts-grn, da Meta AI, permitindo síntese de voz natural em Guarani, mesmo com infraestrutura limitada. A validação do assistente será feita por professores indígenas e universidades envolvidas, para garantir o alinhamento com os saberes e valores culturais do povo Guarani \cite{mendonca2019atitudes}.
 
 \section{Resultados}
-Os resultados da pesquisa demonstram a viabilidade do uso de modelos de linguagem de pequeno porte em tarefas de geração textual em Guarani, uma língua de baixa representação. Foram analisados três modelos: Phi-2, Phi-3-mini e TinyLlama. A curva de perda (loss) ao longo do treinamento revelou que o modelo TinyLlama apresentou uma queda mais rápida e uma estabilização mais eficiente, sugerindo bom desempenho em contextos com recursos computacionais limitados. O modelo Phi-3-mini também se mostrou consistente, enquanto o Phi-2 apresentou maior variabilidade durante o processo de aprendizado.
+Os resultados da pesquisa demonstram a viabilidade do uso de modelos de linguagem de pequeno porte em tarefas de geração textual em Guarani, uma língua de baixa representação. Foram analisados três modelos: Phi-2, Phi-3-mini e TinyLlama. A curva de perda (loss) ao longo do treinamento revelou que o modelo TinyLlama apresentou uma queda mais rápida e uma estabilização mais eficiente, sugerindo bom desempenho em contextos com recursos computacionais limitados.
 
-Nas métricas de avaliação textual — BLEU, ROUGE, BERTScore e Fuzzy Matching — o modelo Phi-3-mini obteve os melhores resultados em todas as categorias, indicando maior precisão lexical, semelhança semântica e fidelidade aproximada ao conteúdo esperado. Ainda que os valores numéricos sejam baixos, o desempenho é considerado positivo, dado o desafio de lidar com uma língua pouco representada e com escassez de dados \cite{lucas2024grammar}. Os modelos demonstraram sinais claros de aprendizado linguístico, com destaque para o Phi-3-mini, que mostrou maior capacidade de adaptação ao contexto cultural Guarani.
+.Fig~\ref{fig:graph}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=2.5in]{GRAPH.png}
+\caption{Curva de Loss – Phi-2 vs Phi-3-mini vs TinyLlama}
+\label{fig:graph}
+\end{figure}
+
+O modelo Phi-3-mini também se mostrou consistente, enquanto o Phi-2 apresentou maior variabilidade durante o processo de aprendizado.
+
+Nas métricas de avaliação textual — BLEU, ROUGE, BERTScore e Fuzzy Matching — o modelo Phi-3-mini obteve os melhores resultados em todas as categorias, indicando maior precisão lexical, semelhança semântica e fidelidade aproximada ao conteúdo esperado. Ainda que os valores numéricos sejam baixos, o desempenho é considerado positivo, dado o desafio de lidar com uma língua pouco representada e com escassez de dados \cite{lucas2024grammar}. Os modelos demonstraram sinais claros de aprendizado linguístico, com destaque para o Phi-3-mini, que mostrou maior capacidade de adaptação ao contexto cultural Guarani. Os resultados detalhados podem ser observados na Tabela~\ref{table:desempenho_texto}
+
+\begin{table}[!h]
+\renewcommand{\arraystretch}{1.3}
+\caption{Desempenho de Geração de Texto: Métricas BLEU, ROUGE, BERTScore e Fuzzy Matching}
+\label{table:desempenho_texto}
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Métrica} & \textbf{Phi-2} & \textbf{Phi-3-mini} & \textbf{TinyLlama} \\
+\hline
+BLEU & 0,167 & 0,170 & 0,151 \\
+\hline
+ROUGE-1 & 0,0021 & 0,0212 & 0,0018 \\
+\hline
+ROUGE-L & 0,0021 & 0,0214 & 0,0018 \\
+\hline
+BERTScore & 0,5510 & 0,5714 & 0,5530 \\
+\hline
+Fuzzy Matching & 11,37\% & 12,21\% & 10,97\% \\
+\hline
+\end{tabular}
+\end{table}
+
 
 Em relação à síntese de voz (TTS), embora o modelo facebook/mms-tts-grn tenha apresentado qualidade satisfatória na conversão de texto em áudio, sua aplicação prática foi limitada. Isso ocorreu devido ao desempenho ainda insuficiente dos modelos de linguagem na geração textual, o que comprometeu a clareza e a coerência das falas sintetizadas. Por isso, a funcionalidade de voz permanece restrita a testes experimentais até que a qualidade textual seja aprimorada.
 

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex guarani"] 1753206908.70047 "guarani.aux" "guarani.bbl" "guarani" 1753206913.39716 0
+["bibtex guarani"] 1753211955.2181 "guarani.aux" "guarani.bbl" "guarani" 1753211958.46063 0
   "./IEEEtran.bst" 1749500140 59215 bc5380b3434a66b895bbc75d3d380540 ""
   "./bibliografia.bib" 1753206567.72745 5074 be404b89a5ce36d35800ec404c0b1784 ""
-  "guarani.aux" 1753206912.62224 1865 8eb53cbcbdb54ba4174f2057fc381e97 "pdflatex"
+  "guarani.aux" 1753211957.92644 2453 a7db8ffcc52a646f88431e838ae40a5e "pdflatex"
   (generated)
   "guarani.bbl"
   "guarani.blg"
   (rewritten before read)
-["pdflatex"] 1753206908.94126 "guarani.tex" "guarani.pdf" "guarani" 1753206913.39772 0
+["pdflatex"] 1753211955.4147 "guarani.tex" "guarani.pdf" "guarani" 1753211958.46123 0
   "/etc/texmf/web2c/texmf.cnf" 1751065331.72502 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -158,11 +158,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1752769467 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1752769614 3345713 9876cc114e0ca3402959de0919699578 ""
+  "GRAPH.png" 1753211817.8517 189948 fa76a4a4e754a7097541a01b11d4f122 ""
   "IEEEtran.cls" 1749500140 282009 b3ef2366fea9c3670678b6bd58854c9a ""
   "footerimg.png" 1749500140 500954 aee2ceaa22d3880e20b691a5c079ac96 ""
-  "guarani.aux" 1753206912.62224 1865 8eb53cbcbdb54ba4174f2057fc381e97 "pdflatex"
-  "guarani.bbl" 1753206908.92217 5330 a65a00a23d2b325d3dca992d2bed3a79 "bibtex guarani"
-  "guarani.tex" 1753206655.60919 11370 60d018775c847e3a0b3d5c92c42d0853 ""
+  "guarani.aux" 1753211957.92644 2453 a7db8ffcc52a646f88431e838ae40a5e "pdflatex"
+  "guarani.bbl" 1753211955.39839 5330 a65a00a23d2b325d3dca992d2bed3a79 "bibtex guarani"
+  "guarani.tex" 1753211948.96626 12211 13189eaa27076281df989073f6f7931d ""
   "headerimg.png" 1749500140 905381 fa7714101840d270b13ad1cc3f4fee65 ""
   (generated)
   "guarani.aux"
