@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  22 JUL 2025 14:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  22 JUL 2025 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,20 +774,20 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (./guarani.aux)
 \openout1 = `guarani.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 -- Lines per column: 49 (approximate, difference = 10.47984pt).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -866,7 +866,7 @@ LaTeX Warning: No \author given.
 <headerimg.png, id=4, 597.6729pt x 76.6062pt>
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 155.
+Package pdftex.def Info: headerimg.png  used on input line 129.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -878,25 +878,39 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 <footerimg.png, id=6, 597.6729pt x 52.0344pt>
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 155.
+Package pdftex.def Info: footerimg.png  used on input line 129.
 (pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}
 
 
  <./headerimg.png> <./footerimg.png>]
+
 (./guarani.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 30.
+
+Underfull \hbox (badness 6526) in paragraph at lines 57--60
+[]\OT1/ptm/m/n/8 FUNAI -- Funda[][]ao Na-cional do []Indio, \OT1/ptm/m/it/8 Li[
+][]oes de gram[]atica
+ []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
+\OT1/ptm/m/n/8 https : / / ftp . ibge . gov . br / Censos / Censo[]Demogra^^Lco
+[]2022 / Quilombolas[]
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 \end{thebibliography}
-                          
-? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
+\OT1/ptm/m/n/8 e[]Indigenas[]por[]sexo[]e[]idade[]Resultados[]do[]universo / Ta
+belas[]de[]
+ []
+
 )
 
 ** Conference Paper **
@@ -913,7 +927,7 @@ Before submitting the final camera ready copy, remember to:
 
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 197.
+Package pdftex.def Info: headerimg.png  used on input line 147.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
 
 Package fancyhdr Warning: \headheight is too small (10.0pt): 
@@ -924,10 +938,10 @@ Package fancyhdr Warning: \headheight is too small (10.0pt):
 
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 197.
+Package pdftex.def Info: footerimg.png  used on input line 147.
 (pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
 [2]
-runsystem(latexminted cleantemp  --timestamp 20250722142437 8CFEC5A069B5296541C
+runsystem(latexminted cleantemp  --timestamp 20250722145509 8CFEC5A069B5296541C
 C03D7EB003A43)...executed safely (allowed).
 
  (./guarani.aux)
@@ -937,20 +951,21 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21049 strings out of 473197
- 453677 string characters out of 5718605
- 1035869 words of memory out of 5000000
- 43965 multiletter control sequences out of 15000+600000
- 586519 words of font info for 83 fonts, out of 8000000 for 9000
+ 21040 strings out of 473197
+ 453352 string characters out of 5718605
+ 1045148 words of memory out of 5000000
+ 43949 multiletter control sequences out of 15000+600000
+ 589985 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 85i,18n,93p,864b,900s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,18n,93p,858b,896s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on guarani.pdf (2 pages, 709370 bytes).
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on guarani.pdf (2 pages, 730269 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 40 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

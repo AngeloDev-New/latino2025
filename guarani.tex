@@ -45,7 +45,6 @@ node [inner sep=0,outer sep=0,below right]
       at (current page.north west){\includegraphics[width=\paperwidth,height=\n1]{headerimg.png}};
 \end{tikzpicture}}
 
-
 \fancyfoot[R]{\begin{tikzpicture}[remember picture,overlay]
 \draw  let \p1=($(current page footer area.north)-(current page.south)$),
       \n1={veclen(\x1,\y1)} in
@@ -53,9 +52,6 @@ node [inner sep=0,outer sep=0,above right]
       at (current page.south west){\includegraphics[width=\paperwidth,height=\n1]{footerimg.png}};
 \end{tikzpicture}}
 
-
-
- 
 \begin{document}
 \title{Avaliando LLMs para a Língua Guarani: Uma análise Comparativa pela Preservação e Revitalização Linguística}
 \newif\iffinal
@@ -91,27 +87,20 @@ node [inner sep=0,outer sep=0,above right]
 \fi
 \maketitle
 \thispagestyle{fancy}
-\begin{abstract}The development of Artificial Intelligence is transforming the way people interact with technology. Everywhere, there is a surge of trained models readily available for use. Faced with the challenges experienced by Indigenous communities—especially the preservation of language and cultural traditions—there emerges an opportunity to use AI, such as the LLaMA model, to support the teaching and preservation of Indigenous languages and cultures. This study explores the use of LLaMA in the development of a bilingual virtual assistant (Guarani–Portuguese) dedicated to the Guarani language and traditions, with the goal of supporting the education of children and young people, focusing on the Tekoha Añetete and Tekoha Itamarã villages, located in Diamante do Oeste, Paraná. \end{abstract}
+
+\begin{abstract}
+The development of Artificial Intelligence is transforming the way people interact with technology. Everywhere, there is a surge of trained models readily available for use. Faced with the challenges experienced by Indigenous communities—especially the preservation of language and cultural traditions—there emerges an opportunity to use AI, such as the LLaMA model, to support the teaching and preservation of Indigenous languages and cultures. This study explores the use of LLaMA in the development of a bilingual virtual assistant (Guarani–Portuguese) dedicated to the Guarani language and traditions, with the goal of supporting the education of children and young people, focusing on the Tekoha Añetete and Tekoha Itamarã villages, located in Diamante do Oeste, Paraná.
+\end{abstract}
+
 \renewcommand{\IEEEkeywordsname}{Keywords}
 \begin{IEEEkeywords}
 Artificial Intelligence; LLaMA Model; Bilingual Virtual Assistant; Guarani Language; Indigenous Education; Language Preservation; Cultural Traditions; Natural Language Processing; Tekoha Añetete; Tekoha Itamarã; Guarani–Portuguese Translation; Low-Resource Languages; AI for Social Impact; Indigenous Communities; Educational Technology.
 \end{IEEEkeywords}
 
 \renewcommand{\abstractname}{Resumo}
-%\renewcommand{\abstractname}{Resumen}
 
 \begin{abstract}
-O desenvolvimento da Inteligência Artificial está modificando a
-forma como as pessoas interagem com a tecnologia. Em todos os lugares, há
-uma enxurrada de modelos treinados e disponíveis para uso. Diante dos
-desafios enfrentados pelas comunidades indígenas, em especial a preservação
-da língua e das tradições culturais, surge a oportunidade de utilizar a IA,
-como o modelo LLaMA, no ensino e na preservação da língua e cultura
-indígena. Este estudo explora o uso do LLaMA no desenvolvimento de um
-assistente virtual bilingue (Guarani-Português) dedicado à língua e às
-tradições Guarani com o objetivo de apoiar o ensino de crianças e jovens,
-com foco nas aldeias Tekoha Añetete e Tekoha Itamarã, localizadas em
-Diamante do Oeste, Paraná.
+O desenvolvimento da Inteligência Artificial está modificando a forma como as pessoas interagem com a tecnologia. Em todos os lugares, há uma enxurrada de modelos treinados e disponíveis para uso. Diante dos desafios enfrentados pelas comunidades indígenas, em especial a preservação da língua e das tradições culturais, surge a oportunidade de utilizar a IA, como o modelo LLaMA, no ensino e na preservação da língua e cultura indígena \cite{deferia2024uso}. Este estudo explora o uso do LLaMA no desenvolvimento de um assistente virtual bilíngue (Guarani-Português) dedicado à língua e às tradições Guarani com o objetivo de apoiar o ensino de crianças e jovens, com foco nas aldeias Tekoha Añetete e Tekoha Itamarã, localizadas em Diamante do Oeste, Paraná \cite{cabral2016guarani, kuhl2013etno}.
 \end{abstract}
 
 \renewcommand\IEEEkeywordsname{Palavras-chave}
@@ -120,80 +109,39 @@ Diamante do Oeste, Paraná.
 Inteligência Artificial; Modelo LLaMA; Assistente Virtual Bilíngue; Língua Guarani; Educação Indígena; Preservação Linguística; Tradições Culturais; Processamento de Linguagem Natural; Tekoha Añetete; Tekoha Itamarã; Tradução Guarani–Português; Línguas de Baixo Recurso; IA para Impacto Social; Comunidades Indígenas; Tecnologia Educacional.
 \end{IEEEkeywords}
 
-
-
-
-
-
-
 \IEEEpeerreviewmaketitle
+
 \section{Introdução} 
-As aldeias Tekoha Añetete e Tekoha Itamarã, situadas em Diamante do Oeste, PR, são espaços de preservação da cultura e da língua Guarani, fundamentais para a identidade das comunidades Guarani Ñandeva e Mbya. A língua Guarani é aprendida desde cedo em casa, enquanto o português é introduzido na escola a partir dos 4 ou 5 anos. As escolas locais são bilíngues, com o objetivo de preservar o idioma nativo e preparar os jovens para a convivência com a sociedade mais ampla.
-Entretanto, o acesso às tecnologias educacionais baseadas em inteligência artificial (IA) é limitado nessas comunidades, o que aumenta a desigualdade em relação às escolas urbanas. Modelos de linguagem como o LLaMA podem contribuir significativamente para o registro e o ensino da língua Guarani. Iniciativas como o IndT5 e o uso de corpora sintéticos são alternativas promissoras para superar a escassez de dados em línguas indígenas.
-Diante disso, o projeto propõe o desenvolvimento de um assistente virtual bilíngue (Guarani-Português), treinado com LLaMA, para apoiar o ensino da língua Guarani e integrar o saber tradicional às tecnologias emergentes, contribuindo para a valorização e preservação cultural nas aldeias
+As aldeias Tekoha Añetete e Tekoha Itamarã, situadas em Diamante do Oeste, PR, são espaços de preservação da cultura e da língua Guarani, fundamentais para a identidade das comunidades Guarani Ñandeva e Mbya \cite{mendonca2019atitudes}. A língua Guarani é aprendida desde cedo em casa, enquanto o português é introduzido na escola a partir dos 4 ou 5 anos \cite{funai2018licoes}. As escolas locais são bilíngues, com o objetivo de preservar o idioma nativo e preparar os jovens para a convivência com a sociedade mais ampla \cite{ibge2023censo}.
 
+Entretanto, o acesso às tecnologias educacionais baseadas em inteligência artificial (IA) é limitado nessas comunidades, o que aumenta a desigualdade em relação às escolas urbanas \cite{isotani2023chatgpt}. Modelos de linguagem como o LLaMA podem contribuir significativamente para o registro e o ensino da língua Guarani. Iniciativas como o IndT5 \cite{nagoudi2021indt5} e o uso de corpora sintéticos são alternativas promissoras para superar a escassez de dados em línguas indígenas \cite{lucas2024grammar}.
 
-\section*{Materiais e Métodos}
-O projeto seguiu as etapas de pesquisa, coleta de dados, desenvolvimento de arquitetura,
-treinamento do modelo, construção do assistente e validação.
-A coleta de dados foi realizada com professores e alunos indígenas da UNILA, em Foz
-do Iguaçu. Foram reunidas palavras e frases do cotidiano, organizadas em categorias
-temáticas, totalizando centenas de exemplos em Guarani. Para isso, foi criada uma
-página web interativa para capturar gravações de áudio, respeitando a oralidade da
-língua.
-O modelo foi treinado no Google Colab usando PyTorch e Hugging Face Transformers,
-com dados estruturados em arquivos JSON no formato de aprendizado supervisionado.
-Foram utilizados modelos abertos como Phi-2, Phi-3-mini e TinyLlama. A versão
-inicial do assistente oferece interação por texto e voz, tradução automática, narração de
-histórias e explicações culturais.
-Para a conversão de texto em fala (TTS), foi usado o modelo facebook/mms-tts-grn, da
-Meta AI, permitindo síntese de voz natural em Guarani, mesmo com infraestrutura
-limitada. A validação do assistente será feita por professores indígenas e universidades
-envolvidas, para garantir o alinhamento com os saberes e valores culturais do povo
-Guarani.
+Diante disso, o projeto propõe o desenvolvimento de um assistente virtual bilíngue (Guarani-Português), treinado com LLaMA, para apoiar o ensino da língua Guarani e integrar o saber tradicional às tecnologias emergentes, contribuindo para a valorização e preservação cultural nas aldeias \cite{mota2008populacoes}.
 
-\section*{Resultados }
-Os resultados da pesquisa demonstram a viabilidade do uso de modelos de linguagem
-de pequeno porte em tarefas de geração textual em Guarani, uma língua de baixa
-representação. Foram analisados três modelos: Phi-2, Phi-3-mini e TinyLlama. A curva
-de perda (loss) ao longo do treinamento revelou que o modelo TinyLlama apresentou
-uma queda mais rápida e uma estabilização mais eficiente, sugerindo bom desempenho
-em contextos com recursos computacionais limitados. O modelo Phi-3-mini também se
-mostrou consistente, enquanto o Phi-2 apresentou maior variabilidade durante o
-processo de aprendizado.
-Nas métricas de avaliação textual — BLEU, ROUGE, BERTScore e Fuzzy Matching
-— o modelo Phi-3-mini obteve os melhores resultados em todas as categorias,
-indicando maior precisão lexical, semelhança semântica e fidelidade aproximada ao
-conteúdo esperado. Ainda que os valores numéricos sejam baixos, o desempenho é
-considerado positivo, dado o desafio de lidar com uma língua pouco representada e com
-escassez de dados. Os modelos demonstraram sinais claros de aprendizado linguístico,
-com destaque para o Phi-3-mini, que mostrou maior capacidade de adaptação ao
-contexto cultural Guarani.
-Em relação à síntese de voz (TTS), embora o modelo facebook/mms-tts-grn tenha
-apresentado qualidade satisfatória na conversão de texto em áudio, sua aplicação prática
-foi limitada. Isso ocorreu devido ao desempenho ainda insuficiente dos modelos de
-linguagem na geração textual, o que comprometeu a clareza e a coerência das falas
-sintetizadas. Por isso, a funcionalidade de voz permanece restrita a testes experimentais
-até que a qualidade textual seja aprimorada.
-Em síntese, os resultados apontam para o potencial de uso de modelos leves de
-linguagem na preservação de línguas indígenas, desde que combinados com abordagens
-culturalmente sensíveis e estratégias de refinamento contínuo
-\section*{Considerações Finais }
+\section{Materiais e Métodos}
+O projeto seguiu as etapas de pesquisa, coleta de dados, desenvolvimento de arquitetura, treinamento do modelo, construção do assistente e validação \cite{souza2016proposta}.
 
-Como considerações finais, é importante destacar que a pesquisa enfrentou desafios
-significativos, especialmente relacionados à escassez de dados e à complexidade
-semântica da língua Guarani, aspectos também observados por Díaz et al. (2025) em
-seus estudos com o Guarani-Jopara. Esses obstáculos evidenciam a dificuldade de
-adaptar modelos de linguagem para contextos culturais e linguísticos específicos,
-principalmente em línguas de baixa representação. Apesar disso, os resultados obtidos
-são promissores: os modelos analisados apresentaram sinais claros de aprendizado
-linguístico, com destaque para o Phi-3-mini, que se mostrou o mais consistente em
-todas as métricas de avaliação. Isso demonstra o potencial da inteligência artificial
-como ferramenta de apoio à preservação cultural e linguística, desde que acompanhada
-de estratégias específicas de adaptação e validação junto às comunidades envolvidas
+A coleta de dados foi realizada com professores e alunos indígenas da UNILA, em Foz do Iguaçu. Foram reunidas palavras e frases do cotidiano, organizadas em categorias temáticas, totalizando centenas de exemplos em Guarani. Para isso, foi criada uma página web interativa para capturar gravações de áudio, respeitando a oralidade da língua \cite{funai2016licoes}.
+
+O modelo foi treinado no Google Colab usando PyTorch e Hugging Face Transformers, com dados estruturados em arquivos JSON no formato de aprendizado supervisionado. Foram utilizados modelos abertos como Phi-2, Phi-3-mini e TinyLlama. A versão inicial do assistente oferece interação por texto e voz, tradução automática, narração de histórias e explicações culturais.
+
+Para a conversão de texto em fala (TTS), foi usado o modelo facebook/mms-tts-grn, da Meta AI, permitindo síntese de voz natural em Guarani, mesmo com infraestrutura limitada. A validação do assistente será feita por professores indígenas e universidades envolvidas, para garantir o alinhamento com os saberes e valores culturais do povo Guarani \cite{mendonca2019atitudes}.
+
+\section{Resultados}
+Os resultados da pesquisa demonstram a viabilidade do uso de modelos de linguagem de pequeno porte em tarefas de geração textual em Guarani, uma língua de baixa representação. Foram analisados três modelos: Phi-2, Phi-3-mini e TinyLlama. A curva de perda (loss) ao longo do treinamento revelou que o modelo TinyLlama apresentou uma queda mais rápida e uma estabilização mais eficiente, sugerindo bom desempenho em contextos com recursos computacionais limitados. O modelo Phi-3-mini também se mostrou consistente, enquanto o Phi-2 apresentou maior variabilidade durante o processo de aprendizado.
+
+Nas métricas de avaliação textual — BLEU, ROUGE, BERTScore e Fuzzy Matching — o modelo Phi-3-mini obteve os melhores resultados em todas as categorias, indicando maior precisão lexical, semelhança semântica e fidelidade aproximada ao conteúdo esperado. Ainda que os valores numéricos sejam baixos, o desempenho é considerado positivo, dado o desafio de lidar com uma língua pouco representada e com escassez de dados \cite{lucas2024grammar}. Os modelos demonstraram sinais claros de aprendizado linguístico, com destaque para o Phi-3-mini, que mostrou maior capacidade de adaptação ao contexto cultural Guarani.
+
+Em relação à síntese de voz (TTS), embora o modelo facebook/mms-tts-grn tenha apresentado qualidade satisfatória na conversão de texto em áudio, sua aplicação prática foi limitada. Isso ocorreu devido ao desempenho ainda insuficiente dos modelos de linguagem na geração textual, o que comprometeu a clareza e a coerência das falas sintetizadas. Por isso, a funcionalidade de voz permanece restrita a testes experimentais até que a qualidade textual seja aprimorada.
+
+Em síntese, os resultados apontam para o potencial de uso de modelos leves de linguagem na preservação de línguas indígenas, desde que combinados com abordagens culturalmente sensíveis e estratégias de refinamento contínuo \cite{nagoudi2021indt5}.
+
+\section{Considerações Finais}
+Como considerações finais, é importante destacar que a pesquisa enfrentou desafios significativos, especialmente relacionados à escassez de dados e à complexidade semântica da língua Guarani, aspectos também observados por \cite{diaz2025building} em seus estudos com o Guarani-Jopara. Esses obstáculos evidenciam a dificuldade de adaptar modelos de linguagem para contextos culturais e linguísticos específicos, principalmente em línguas de baixa representação.
+
+Apesar disso, os resultados obtidos são promissores: os modelos analisados apresentaram sinais claros de aprendizado linguístico, com destaque para o Phi-3-mini, que se mostrou o mais consistente em todas as métricas de avaliação. Isso demonstra o potencial da inteligência artificial como ferramenta de apoio à preservação cultural e linguística, desde que acompanhada de estratégias específicas de adaptação e validação junto às comunidades envolvidas \cite{deferia2024uso, cabral2016guarani}.
+
 \bibliographystyle{IEEEtran}
-\bibliography{bibliografia} 
+\bibliography{bibliografia}
 
 \end{document}
-
-
