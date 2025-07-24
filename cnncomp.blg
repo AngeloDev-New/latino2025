@@ -1,56 +1,59 @@
 This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: example.aux
+The top-level auxiliary file: cnncomp.aux
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: example.bib
+Database file #1: bibliografia.bib
+Warning--entry type for "sales2020analise" isn't style-file defined
+--line 44 of file bibliografia.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 1 entry,
+You've used 9 entries,
             4024 wiz_defined-function locations,
-            814 strings with 7519 characters,
-and the built_in function-call counts, 932 in all, are:
-= -- 62
-> -- 19
-< -- 7
-+ -- 10
-- -- 3
-* -- 58
-:= -- 144
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 1
-chr.to.int$ -- 18
-cite$ -- 1
-duplicate$ -- 59
-empty$ -- 79
-format.name$ -- 4
-if$ -- 199
+            869 strings with 9395 characters,
+and the built_in function-call counts, 5484 in all, are:
+= -- 515
+> -- 78
+< -- 23
++ -- 40
+- -- 15
+* -- 276
+:= -- 1012
+add.period$ -- 19
+call.type$ -- 9
+change.case$ -- 18
+chr.to.int$ -- 42
+cite$ -- 9
+duplicate$ -- 418
+empty$ -- 414
+format.name$ -- 19
+if$ -- 1197
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 26
-num.names$ -- 1
-pop$ -- 26
+int.to.str$ -- 9
+missing$ -- 76
+newline$ -- 64
+num.names$ -- 9
+pop$ -- 146
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 63
+skip$ -- 440
 stack$ -- 0
-substring$ -- 43
-swap$ -- 46
-text.length$ -- 1
+substring$ -- 143
+swap$ -- 305
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 1
+type$ -- 9
 warning$ -- 0
-while$ -- 5
-width$ -- 2
-write$ -- 31
+while$ -- 19
+width$ -- 10
+write$ -- 133
+(There was 1 warning)

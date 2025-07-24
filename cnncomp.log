@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  22 JUL 2025 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  24 JUL 2025 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**guarani.tex
-(./guarani.tex
+**cnncomp.tex
+(./cnncomp.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (./IEEEtran.cls
@@ -257,6 +257,19 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 \@float@every@listing=\toks27
 \c@listing=\count304
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -287,7 +300,7 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks28
+\@emptytoks=\toks30
 \ex@=\dimen178
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -327,21 +340,21 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count312
 \dspbrk@lvl=\count313
-\tag@help=\toks29
+\tag@help=\toks31
 \row@=\count314
 \column@=\count315
 \maxfields@=\count316
-\andhelp@=\toks30
+\andhelp@=\toks32
 \eqnshift@=\dimen181
 \alignsep@=\dimen182
 \tagshift@=\dimen183
 \tagwidth@=\dimen184
 \totwidth@=\dimen185
 \lineht@=\dimen186
-\@envbody=\toks31
+\@envbody=\toks33
 \multlinegap=\skip54
 \multlinetaggap=\skip55
-\mathdisplay@stack=\toks32
+\mathdisplay@stack=\toks34
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
@@ -349,15 +362,15 @@ LaTeX Info: Redefining \] on input line 2954.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks33
-\thm@bodyfont=\toks34
-\thm@headfont=\toks35
-\thm@notefont=\toks36
-\thm@headpunct=\toks37
+\thm@style=\toks35
+\thm@bodyfont=\toks36
+\thm@headfont=\toks37
+\thm@notefont=\toks38
+\thm@headpunct=\toks39
 \thm@preskip=\skip56
 \thm@postskip=\skip57
 \thm@headsep=\skip58
-\dth@everypar=\toks38
+\dth@everypar=\toks40
 )
 \c@definition=\count318
 
@@ -379,7 +392,7 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen187
 \ar@mcellbox=\box65
 \extrarowheight=\dimen188
-\NC@list=\toks39
+\NC@list=\toks41
 \extratabsurround=\skip61
 \backup@length=\skip62
 \ar@cellbox=\box66
@@ -446,7 +459,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen259
 \Gm@layouthoffset=\dimen260
 \Gm@layoutvoffset=\dimen261
-\Gm@dimlist=\toks40
+\Gm@dimlist=\toks42
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -470,7 +483,7 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks41
+\pgfutil@everybye=\toks43
 \pgfutil@tempdima=\dimen262
 \pgfutil@tempdimb=\dimen263
 )
@@ -503,9 +516,9 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \c@pgf@countb=\count338
 \c@pgf@countc=\count339
 \c@pgf@countd=\count340
-\t@pgf@toka=\toks42
-\t@pgf@tokb=\toks43
-\t@pgf@tokc=\toks44
+\t@pgf@toka=\toks44
+\t@pgf@tokb=\toks45
+\t@pgf@tokc=\toks46
 \pgf@sys@id@count=\count341
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
@@ -557,9 +570,9 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 \pgfmath@dimen=\dimen274
 \pgfmath@count=\count344
 \pgfmath@box=\box69
-\pgfmath@toks=\toks45
-\pgfmath@stack@operand=\toks46
-\pgfmath@stack@operation=\toks47
+\pgfmath@toks=\toks47
+\pgfmath@stack@operand=\toks48
+\pgfmath@stack@operation=\toks49
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -700,8 +713,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen301
 \pgffor@skip=\dimen302
-\pgffor@stack=\toks48
-\pgffor@toks=\toks49
+\pgffor@stack=\toks50
+\pgffor@toks=\toks51
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
@@ -758,7 +771,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip79
 \f@nch@widthC=\skip80
 \f@nch@widthR=\skip81
-\@temptokenb=\toks50
+\@temptokenb=\toks52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tikzpagenodes/tikzpagenodes.sty
 Package: tikzpagenodes 2012/09/16 v1.1 Special PGF/TikZ nodes for areas of the 
@@ -771,25 +784,25 @@ Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (./guarani.aux)
-\openout1 = `guarani.aux'.
+) (./cnncomp.aux)
+\openout1 = `cnncomp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
--- Lines per column: 49 (approximate, difference = 10.47984pt).
+-- Lines per column: 49 (approximate, difference = 8.47984pt).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count359
@@ -797,12 +810,12 @@ LaTeX Font Info:    ... okay on input line 55.
 \scratchbox=\box79
 \nofMPsegments=\count360
 \nofMParguments=\count361
-\everyMPshowfont=\toks51
+\everyMPshowfont=\toks53
 \MPscratchCnt=\count362
 \MPscratchDim=\dimen313
 \MPnumerator=\count363
 \makeMPintoPDFobject=\count364
-\everyMPtoPDFconversion=\toks52
+\everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -829,11 +842,11 @@ Package caption Info: End \AtBeginDocument code.
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=523.24583pt
-* \textheight=598.47984pt
+* \textheight=596.47984pt
 * \oddsidemargin=-26.7454pt
 * \evensidemargin=-26.7454pt
-* \topmargin=-5.47932pt
-* \headheight=10.0pt
+* \topmargin=-7.47932pt
+* \headheight=12.0pt
 * \headsep=18.56761pt
 * \topskip=12.0pt
 * \footskip=40.5821pt
@@ -860,84 +873,131 @@ LaTeX Warning: No \author given.
 LaTeX Warning: No \author given.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 122--124
+[]\T1/ptm/m/n/10 O dataset PlantVil-lage, é uti-lizado na co-mu-nidade de
+ []
 
 
 
 <headerimg.png, id=4, 597.6729pt x 76.6062pt>
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 129.
+Package pdftex.def Info: headerimg.png  used on input line 124.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
-
 <footerimg.png, id=6, 597.6729pt x 52.0344pt>
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 129.
-(pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
+Package pdftex.def Info: footerimg.png  used on input line 124.
+(pdftex.def)             Requested size: 614.34232pt x 74.5539pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}
 
 
  <./headerimg.png> <./footerimg.png>]
-<GRAPH.png, id=17, 1299.85625pt x 630.355pt>
-File: GRAPH.png Graphic file (type png)
-<use GRAPH.png>
-Package pdftex.def Info: GRAPH.png  used on input line 137.
-(pdftex.def)             Requested size: 180.67499pt x 87.61427pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 151.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 151.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 151.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-(./guarani.bbl
-Underfull \hbox (badness 6526) in paragraph at lines 57--60
-[]\OT1/ptm/m/n/8 FUNAI -- Funda[][]ao Na-cional do []Indio, \OT1/ptm/m/it/8 Li[
-][]oes de gram[]atica
+
+Underfull \hbox (badness 8094) in paragraph at lines 134--135
+ \T1/ptm/m/it/10 Car-rega-mento e Red-i-men-sion-a-mento das Im-a-gens: []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
-\OT1/ptm/m/n/8 https : / / ftp . ibge . gov . br / Censos / Censo[]Demogra^^Lco
-[]2022 / Quilombolas[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
-\OT1/ptm/m/n/8 e[]Indigenas[]por[]sexo[]e[]idade[]Resultados[]do[]universo / Ta
-belas[]de[]
+Underfull \hbox (badness 1389) in paragraph at lines 134--135
+\T1/ptm/m/n/10 As im-a-gens do dataset foram car-regadas e red-i-men-sion-
  []
 
 
 
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 69.
+Package pdftex.def Info: headerimg.png  used on input line 145.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
-
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 69.
-(pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
-[2 <./GRAPH.png (PNG copy)>])
+Package pdftex.def Info: footerimg.png  used on input line 145.
+(pdftex.def)             Requested size: 614.34232pt x 74.5539pt.
+[2]
+
+<figs/fig001.png, id=21, 963.6pt x 525.965pt>
+File: figs/fig001.png Graphic file (type png)
+<use figs/fig001.png>
+Package pdftex.def Info: figs/fig001.png  used on input line 182.
+(pdftex.def)             Requested size: 252.94499pt x 138.06386pt.
+<figs/fig002.png, id=22, 510.90875pt x 461.725pt>
+File: figs/fig002.png Graphic file (type png)
+<use figs/fig002.png>
+Package pdftex.def Info: figs/fig002.png  used on input line 192.
+(pdftex.def)             Requested size: 252.94499pt x 228.59332pt.
+
+
+File: headerimg.png Graphic file (type png)
+<use headerimg.png>
+Package pdftex.def Info: headerimg.png  used on input line 196.
+(pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
+File: footerimg.png Graphic file (type png)
+<use footerimg.png>
+Package pdftex.def Info: footerimg.png  used on input line 196.
+(pdftex.def)             Requested size: 614.34232pt x 74.5539pt.
+[3]
+<figs/fig003.png, id=26, 592.2125pt x 513.92pt>
+File: figs/fig003.png Graphic file (type png)
+<use figs/fig003.png>
+Package pdftex.def Info: figs/fig003.png  used on input line 201.
+(pdftex.def)             Requested size: 252.94499pt x 219.50703pt.
+
+Underfull \vbox (badness 6063) has occurred while \output is active []
+
+
+
+<figs/fig004.png, id=27, 500.87125pt x 466.74374pt>
+File: figs/fig004.png Graphic file (type png)
+<use figs/fig004.png>
+Package pdftex.def Info: figs/fig004.png  used on input line 211.
+(pdftex.def)             Requested size: 252.94499pt x 235.7144pt.
+
+
+File: headerimg.png Graphic file (type png)
+<use headerimg.png>
+Package pdftex.def Info: headerimg.png  used on input line 217.
+(pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
+File: footerimg.png Graphic file (type png)
+<use footerimg.png>
+Package pdftex.def Info: footerimg.png  used on input line 217.
+(pdftex.def)             Requested size: 614.34232pt x 74.5539pt.
+[4 <./figs/fig001.png (PNG copy)> <./figs/fig002.png (PNG copy)> <./figs/fig003
+.png (PNG copy)>]
+Underfull \vbox (badness 1400) has occurred while \output is active []
+
+
+
+(./cnncomp.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 30.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+File: headerimg.png Graphic file (type png)
+<use headerimg.png>
+Package pdftex.def Info: headerimg.png  used on input line 32.
+(pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
+File: footerimg.png Graphic file (type png)
+<use footerimg.png>
+Package pdftex.def Info: footerimg.png  used on input line 32.
+(pdftex.def)             Requested size: 614.34232pt x 74.5539pt.
+[5 <./figs/fig004.png (PNG copy)>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -955,47 +1015,40 @@ Before submitting the final camera ready copy, remember to:
 
 File: headerimg.png Graphic file (type png)
 <use headerimg.png>
-Package pdftex.def Info: headerimg.png  used on input line 181.
+Package pdftex.def Info: headerimg.png  used on input line 234.
 (pdftex.def)             Requested size: 614.34232pt x 76.79419pt.
-
-Package fancyhdr Warning: \headheight is too small (10.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.0pt}.
-
 File: footerimg.png Graphic file (type png)
 <use footerimg.png>
-Package pdftex.def Info: footerimg.png  used on input line 181.
-(pdftex.def)             Requested size: 614.34232pt x 70.55383pt.
-[3
+Package pdftex.def Info: footerimg.png  used on input line 234.
+(pdftex.def)             Requested size: 614.34232pt x 74.5539pt.
+[6
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250722161915 8CFEC5A069B5296541C
-C03D7EB003A43)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20250724143943 C6F4AAD0AF315464A77
+E9C0F4D713F32)...executed safely (allowed).
 
- (./guarani.aux)
+ (./cnncomp.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21066 strings out of 473197
- 453831 string characters out of 5718605
- 1041291 words of memory out of 5000000
- 43973 multiletter control sequences out of 15000+600000
- 592816 words of font info for 94 fonts, out of 8000000 for 9000
+ 21402 strings out of 473197
+ 457758 string characters out of 5718605
+ 1032380 words of memory out of 5000000
+ 44297 multiletter control sequences out of 15000+600000
+ 662491 words of font info for 131 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 85i,18n,93p,858b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,18n,93p,1542b,1020s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on guarani.pdf (3 pages, 923478 bytes).
+Output written on cnncomp.pdf (6 pages, 1118886 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
