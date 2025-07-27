@@ -56,7 +56,7 @@ node [inner sep=0,outer sep=0,above right]
 \end{tikzpicture}}
 
 \begin{document}
-\title{COMPARAÇÃO DA EFICIÊNCIA DE CNNS NA CLASSIFICAÇÃO DE DOENÇAS EM PLANTAS}
+\title{Weed and Anomaly Detection in Maize Fields with Deep Learning on Fragmented Orthomosaics}
 \newif\iffinal
 \finaltrue
 \iffinal
@@ -92,24 +92,24 @@ node [inner sep=0,outer sep=0,above right]
 \thispagestyle{fancy}
 
 \begin{abstract}
-This study investigates the effectiveness of different Convolutional Neural Network (CNN) architectures for plant disease classification using the PlantVillage dataset. The evaluated models include a Fully Connected network, ResNet50, and a hybrid CNN-LSTM architecture. Automated plant disease detection is a key component of precision agriculture, contributing to reduced crop losses and production costs. While traditionally performed by specialists, the adoption of artificial intelligence-based solutions can provide efficient support for decision-making in the field. The study describes the image preprocessing steps, including resizing to 224x224 pixels, normalization, dataset splitting into training, validation, and testing sets, and the application of data augmentation techniques. The models were evaluated using accuracy, precision, recall, F1-score, and confusion matrix. The results enable the identification of the most efficient architecture in terms of performance and computational feasibility for the development of automated agricultural monitoring systems. 
+This work presents the development of a computer vision pipeline for detecting anomalies in maize crops, including weeds, planting gaps, and overlapping plants. The initial dataset consisted of high-resolution orthomosaic images provided by a partner company. Due to their large size and complexity, these images were segmented into 600×600 pixel tiles, resulting in 1,316 sub-images. After assessing quality, 451 images were selected and manually annotated using a custom labeling tool developed with Pygame. Initially, the Weeds-Galore dataset and DeepLabv3 model were explored, but due to limited performance, the approach was shifted to YOLO-based object detection. The annotated dataset was divided into training, validation, and test sets, with a recommended 70/15/15 distribution. The proposed solution aims to support agricultural monitoring by automating anomaly detection in large-scale crop imagery.
 \end{abstract}
 
 \renewcommand{\IEEEkeywordsname}{Keywords}
 \begin{IEEEkeywords}
-Artificial Neural Networks, Disease Classification, Deep Learning.
+computer vision, weed detection, orthomosaic, maize crop, deep learning, YOLO, image labeling, agricultural monitoring
 \end{IEEEkeywords}
 
 \renewcommand{\abstractname}{Resumo}
 
 \begin{abstract}
-Este estudo apresenta a implementação e comparação da eficiência de diferentes arquiteturas de Redes Neurais Convolucionais (CNNs), especificamente uma rede Densa (Fully Connected), ResNet50 e uma combinação de LSTM com CNN, na tarefa de classificação de doenças em plantas utilizando o conjunto de dados PlantVillage. A detecção automatizada de doenças em plantas é essencial para a agricultura moderna, assegurando a redução das perdas e dos custos de produção. A detecção e classificação de doenças são feitas por profissionais qualificados, entretanto, a incorporação de novas tecnologias pode oferecer suporte adicional a esses profissionais. A inteligência artificial, presente no dia a dia, pode ser integrada como solução baseada em IA para apoiar esses profissionais na tomada de decisão. O uso de Redes Neurais Artificiais Convolucionais, as conhecidas CNNs, passa a ser fundamental, com alta precisão. O trabalho detalha as etapas de pré-processamento de dados, incluindo redimensionamento para 224x224 pixels, normalização, divisão em conjuntos de treino, validação e teste, e aplicação de técnicas de aumento de dados. Os modelos foram treinados e avaliados utilizando métricas como acurácia, precisão, recall, F1-score e matriz de confusão. Os resultados práticos da implementação permitem identificar a arquitetura mais adequada em termos de desempenho e eficiência computacional para o desenvolvimento de sistemas automatizados de monitoramento agrícola.  
+Este trabalho apresenta o desenvolvimento de um pipeline de visão computacional para a detecção de anomalias em lavouras de milho, incluindo plantas daninhas, falhas no plantio (gaps) e plantas sobrepostas. O conjunto inicial de dados consistia em imagens ortomosaicas de alta resolução fornecidas por uma empresa parceira. Devido ao tamanho e complexidade das imagens, estas foram divididas em subimagens de 600×600 pixels, resultando em 1.316 imagens. Após avaliação de qualidade, 451 imagens foram selecionadas e anotadas manualmente com uma ferramenta de rotulagem desenvolvida em Pygame. Inicialmente, foi explorado o uso do conjunto de dados Weeds-Galore e do modelo DeepLabv3, mas devido à performance limitada, a abordagem foi direcionada para a detecção de objetos baseada em YOLO. O conjunto anotado foi dividido em conjuntos de treino, validação e teste, com uma distribuição recomendada de 70\% treino, 15\% validação e 15\% teste. A solução proposta visa apoiar o monitoramento agrícola, automatizando a detecção de anomalias em imagens de grandes áreas de cultivo.
 \end{abstract}
 
 \renewcommand\IEEEkeywordsname{Palavras-chave}
 
 \begin{IEEEkeywords}
-Redes Neurais Artificiais, Classificação de Doenças, Aprendizado Profundo. 
+visão computacional, detecção de plantas daninhas, ortomosaico, lavoura de milho, deep learning, YOLO, rotulagem de imagens, monitoramento agrícola
 \end{IEEEkeywords}
 
 \IEEEpeerreviewmaketitle
