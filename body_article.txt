@@ -1,0 +1,71 @@
+Organização por seções:
+1. Introdução
+
+Cabe:
+
+    Crescente uso de IA e CNNs na agricultura de precisão.
+
+    Falta de datasets específicos de lavouras brasileiras.
+
+    Dificuldade de detectar daninhas e anomalias automaticamente.
+
+    Importância econômica do milho e prejuízos por falhas de detecção.
+
+    Proposta da solução: CNN embarcada no drone simulando sobrevoo com OpenStreetMap + ortomosaico para fazer contagem e identificação.
+
+    Problemas enfrentados com datasets: ausência de amostras de plantas daninhas → motivação para criar um classificador binário (milho vs não-milho).
+
+2. Trabalhos Relacionados
+
+Cabe:
+
+    WeedsGaloRe (como benchmark para plantas daninhas).
+
+    Trabalhos com CNNs na contagem de plantas (por ex. trabalhos com YOLOv5, EfficientNet etc).
+
+    Citações sobre ortomosaicos e OpenStreetMap aplicados à agricultura.
+
+    Citações sobre uso de pygame/manual labeling para criação de datasets.
+
+3. Materiais e Métodos
+
+Cabe:
+
+    Pipeline:
+
+        Uso de drone real/simulado com OSM + ortomosaico.
+
+        Anotação com pygame.
+
+        Treinamento da CNN YOLO para detectar plantas e anomalias.
+
+        Pipeline separado para classificador binário (milho x não-milho).
+
+    Ferramentas: Python, PyTorch, YOLOv8, Pygame, OSM, etc.
+
+    Descrição do dataset criado e sua estrutura.
+
+4. Resultados
+
+Cabe:
+
+    Precisão da CNN para detecção de milho.
+
+    Precisão da CNN binária milho vs não-milho.
+
+    Simulação da contagem e identificação em ortomosaico.
+
+    Discussão sobre performance em diferentes resoluções ou tipos de terreno.
+
+5. Discussão e Trabalhos Futuros
+
+Cabe:
+
+    Inserção da CNN em tempo real em drones reais.
+
+    Aplicação de georreferenciamento para identificação de regiões críticas.
+
+    Aumento do dataset com dados sintéticos.
+
+    Discussão ética (pode vir resumida aqui): automação, impacto social.
+

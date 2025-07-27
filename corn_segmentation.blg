@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: corn_segmentation.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bibliografia.bib
+Repeated entry---line 68 of file bibliografia.bib
+ : @article{dosSantos2020segmentacao
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 78 of file bibliografia.bib
+ : @article{zhao2019object
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 89 of file bibliografia.bib
+ : @inproceedings{redmon2018yolov3
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 96 of file bibliografia.bib
+ : @article{kamilaris2018deep
+ :                           ,
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in tessele2024modelo
+
+Done.
+You've used 8 entries,
+            4024 wiz_defined-function locations,
+            862 strings with 8710 characters,
+and the built_in function-call counts, 6499 in all, are:
+= -- 575
+> -- 124
+< -- 60
++ -- 68
+- -- 19
+* -- 314
+:= -- 994
+add.period$ -- 16
+call.type$ -- 8
+change.case$ -- 8
+chr.to.int$ -- 126
+cite$ -- 9
+duplicate$ -- 470
+empty$ -- 470
+format.name$ -- 25
+if$ -- 1488
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 71
+newline$ -- 49
+num.names$ -- 8
+pop$ -- 140
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 529
+stack$ -- 0
+substring$ -- 334
+swap$ -- 403
+text.length$ -- 18
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 8
+warning$ -- 1
+while$ -- 33
+width$ -- 9
+write$ -- 106
+(There were 4 error messages)
