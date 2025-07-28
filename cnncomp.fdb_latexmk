@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex cnncomp"] 1753378782.91014 "cnncomp.aux" "cnncomp.bbl" "cnncomp" 1753378786.27779 0
+["bibtex cnncomp"] 1753378782.91014 "cnncomp.aux" "cnncomp.bbl" "cnncomp" 1753732906.27895 0
   "./IEEEtran.bst" 1749500140 59215 bc5380b3434a66b895bbc75d3d380540 ""
-  "./bibliografia.bib" 1753370496.06412 3551 ecad6724659274927724ec19465526e1 ""
-  "cnncomp.aux" 1753378785.66926 4177 0760efa0596707ccd883ebb002c48741 "pdflatex"
+  "./bibliografia.bib" 1753732844.95986 3551 ecad6724659274927724ec19465526e1 ""
+  "cnncomp.aux" 1753732905.68093 4177 0760efa0596707ccd883ebb002c48741 "pdflatex"
   (generated)
   "cnncomp.bbl"
   "cnncomp.blg"
   (rewritten before read)
-["pdflatex"] 1753378783.0923 "cnncomp.tex" "cnncomp.pdf" "cnncomp" 1753378786.27835 0
+["pdflatex"] 1753732902.77362 "cnncomp.tex" "cnncomp.pdf" "cnncomp" 1753732906.27961 0
   "/etc/texmf/web2c/texmf.cnf" 1751065331.72502 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -166,13 +166,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1752769467 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1752769614 3345713 9876cc114e0ca3402959de0919699578 ""
   "IEEEtran.cls" 1749500140 282009 b3ef2366fea9c3670678b6bd58854c9a ""
-  "cnncomp.aux" 1753378785.66926 4177 0760efa0596707ccd883ebb002c48741 "pdflatex"
-  "cnncomp.bbl" 1753378783.07721 4119 e1df3ef8722be21d3e912754c1e4eb6c "bibtex cnncomp"
-  "cnncomp.tex" 1753378405.33439 26764 f6ae1efe4376416a48b01cb66399c22e ""
-  "figs/fig001.png" 1753374520.20582 279959 0fb0298c957a5ef95bac1abd7022990b ""
-  "figs/fig002.png" 1753374759.54477 31569 c1b276649ffbc56174d79b20852173b7 ""
-  "figs/fig003.png" 1753375070.54668 36568 f7536ba6cf4d03f0f92e46699322ac8b ""
-  "figs/fig004.png" 1753375759.71712 26343 1f716d6ea04bde5844e399941679e06c ""
+  "cnncomp.aux" 1753732905.68093 4177 0760efa0596707ccd883ebb002c48741 "pdflatex"
+  "cnncomp.bbl" 1753732844.95986 4119 e1df3ef8722be21d3e912754c1e4eb6c "bibtex cnncomp"
+  "cnncomp.tex" 1753732887.37661 26769 41868ba5861e743dd02e3506316beaee ""
+  "figs/fig001.png" 1753732844.97986 279959 0fb0298c957a5ef95bac1abd7022990b ""
+  "figs/fig002.png" 1753732844.97986 31569 c1b276649ffbc56174d79b20852173b7 ""
+  "figs/fig003.png" 1753732844.98386 36568 f7536ba6cf4d03f0f92e46699322ac8b ""
+  "figs/fig004.png" 1753732844.98386 26343 1f716d6ea04bde5844e399941679e06c ""
   "footerimg.png" 1749500140 500954 aee2ceaa22d3880e20b691a5c079ac96 ""
   "headerimg.png" 1749500140 905381 fa7714101840d270b13ad1cc3f4fee65 ""
   (generated)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  24 JUL 2025 14:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.7.17)  28 JUL 2025 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,7 +1024,7 @@ Package pdftex.def Info: footerimg.png  used on input line 234.
 [6
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250724143943 C6F4AAD0AF315464A77
+runsystem(latexminted cleantemp  --timestamp 20250728170142 C6F4AAD0AF315464A77
 E9C0F4D713F32)...executed safely (allowed).
 
  (./cnncomp.aux)
@@ -1045,7 +1045,7 @@ Here is how much of TeX's memory you used:
 exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on cnncomp.pdf (6 pages, 1118886 bytes).
+Output written on cnncomp.pdf (6 pages, 1118827 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
