@@ -401,14 +401,6 @@ INPUT ./footerimg.png
 INPUT ./footerimg.png
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT ./headerimg.png
-INPUT ./headerimg.png
-INPUT ./headerimg.png
-INPUT ./headerimg.png
-INPUT ./footerimg.png
-INPUT ./footerimg.png
-INPUT ./footerimg.png
-INPUT ./footerimg.png
 INPUT fenotipagen.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
