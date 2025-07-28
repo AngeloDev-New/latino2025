@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex corn_segmentation"] 1753647324.69149 "corn_segmentation.aux" "corn_segmentation.bbl" "corn_segmentation" 1753647324.87631 2
+["bibtex corn_segmentation"] 1753648569.49763 "corn_segmentation.aux" "corn_segmentation.bbl" "corn_segmentation" 1753648569.68198 2
   "./IEEEtran.bst" 1749500140 59215 bc5380b3434a66b895bbc75d3d380540 ""
   "./bibliografia.bib" 1753645243.2818 3486 ab87f492e124938c48a44fb4c89a3b2a ""
-  "corn_segmentation.aux" 1753647324.11133 2637 8626808ca42e75de659d003662e50ea3 "pdflatex"
+  "corn_segmentation.aux" 1753648568.88979 4488 457bb559d737d6a1234f432de40d3749 "pdflatex"
   (generated)
   "corn_segmentation.bbl"
   "corn_segmentation.blg"
   (rewritten before read)
-["pdflatex"] 1753647319.9535 "corn_segmentation.tex" "corn_segmentation.pdf" "corn_segmentation" 1753647324.87662 0
+["pdflatex"] 1753648563.5181 "corn_segmentation.tex" "corn_segmentation.pdf" "corn_segmentation" 1753648569.68246 0
   "/etc/texmf/web2c/texmf.cnf" 1751065331.72502 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -169,11 +169,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1752769467 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1752769614 3345713 9876cc114e0ca3402959de0919699578 ""
   "IEEEtran.cls" 1749500140 282009 b3ef2366fea9c3670678b6bd58854c9a ""
-  "corn_segmentation.aux" 1753647324.11133 2637 8626808ca42e75de659d003662e50ea3 "pdflatex"
-  "corn_segmentation.bbl" 1753647324.86735 2631 f0328e8d068826e74d804ddafccf132c "bibtex corn_segmentation"
-  "corn_segmentation.tex" 1753647313.10308 13124 ecbe854e7eacd7d4561557f4dc7450c3 ""
+  "corn_segmentation.aux" 1753648568.88979 4488 457bb559d737d6a1234f432de40d3749 "pdflatex"
+  "corn_segmentation.bbl" 1753648569.67781 2631 f0328e8d068826e74d804ddafccf132c "bibtex corn_segmentation"
+  "corn_segmentation.tex" 1753648560.58562 14072 d062bb9115ab0d3c186b15bf70182e37 ""
+  "figs/fig001.png" 1753646206.15269 21757787 d1c6ff4709c133fbe1564fe31933ee6d ""
   "figs/fig002.jpeg" 1753646435.55306 445236 7e5202ec0f319b149cf9ee5a73dddf1f ""
   "figs/fig003.png" 1753646960.75057 10376321 5911d4d2fcef301ad8e2662584a8e070 ""
+  "figs/fig004.png" 1753648348.70927 1003052 20a8004c7fa17aa1560462d69aaa7e41 ""
   "footerimg.png" 1749500140 500954 aee2ceaa22d3880e20b691a5c079ac96 ""
   "headerimg.png" 1749500140 905381 fa7714101840d270b13ad1cc3f4fee65 ""
   (generated)

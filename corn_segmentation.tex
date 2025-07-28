@@ -119,6 +119,12 @@ visão computacional, detecção de plantas daninhas, ortomosaico, lavoura de mi
 A Inteligência Artificial (IA) tem transformado profundamente a forma como interagimos com a tecnologia e com o mundo ao nosso redor. Desde assistentes virtuais até sistemas de recomendação e carros autônomos, os avanços nessa área têm proporcionado ganhos significativos em eficiência, produtividade e inovação. No entanto, esse crescimento acelerado levanta questões importantes sobre ética, responsabilidade e impactos sociais da IA, que precisam ser considerados com igual atenção \cite{garcia2020ia, pinto2020responsabilidade}.
 
 O uso de IA no setor agrícola é um exemplo claro de como essas tecnologias podem ser aplicadas em contextos práticos para solucionar problemas reais. Técnicas de aprendizado profundo, como as redes neurais convolucionais (CNNs), têm se mostrado eficazes na identificação de doenças em plantas, otimizando processos e reduzindo perdas na produção agrícola \cite{kamilaris2018deep, dosSantos2020segmentacao}. Essas soluções automatizadas tornam-se cada vez mais viáveis com o avanço dos modelos de detecção de objetos, como o YOLO (You Only Look Once), que permite reconhecimento em tempo real com alta precisão \cite{zhao2019object, redmon2018yolov3}.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{fig001.png}
+\caption{Foto panoramica da plantacao de milho}
+\label{fig:fig01}
+\end{figure}
 
 A Figura~\ref{fig:fig01} apresenta uma imagem panorâmica da plantação de milho, ilustrando o tipo de cenário analisado neste trabalho.
 
@@ -127,8 +133,8 @@ No entanto, a aplicação da inteligência artificial na agricultura também lev
 Além disso, a ausência de regulamentações robustas sobre o uso de IA em contextos agrícolas levanta questões críticas sobre privacidade de dados georreferenciados, responsabilidade em decisões automatizadas (por exemplo, em sistemas de pulverização autônoma) e a transparência dos modelos de machine learning utilizados – frequentemente tratados como caixas-pretas. Como apontado por Mittelstadt et al. (2016), os sistemas automatizados exigem estruturas de governança ética que assegurem não apenas desempenho técnico, mas também justiça, explicabilidade e responsabilidade social \cite{mittelstadt2016ethics}. Nesse contexto, é fundamental que o desenvolvimento e a implementação dessas tecnologias considerem uma abordagem participativa e centrada no ser humano, buscando garantir que os avanços da IA na agricultura beneficiem toda a cadeia produtiva de forma justa e sustentável.
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\linewidth]{fig002.jpeg}
-\caption{segmentação manual com pygame}
+\includegraphics[width=0.8\linewidth]{fig002.png}
+\caption{Gaps & Plantas duplas}
 \label{fig:fig02}
 \end{figure}
 
@@ -162,13 +168,27 @@ Esse tipo de abordagem tem sido fundamental para a agricultura de precisão, poi
 
 \subsection{Rotulagem Manual e Uso de Pygame para Criação de Datasets}
 
-A construção de datasets anotados é uma etapa crítica para o treinamento de modelos de \textit{deep learning}, sobretudo em domínios específicos como a agricultura, onde conjuntos de dados públicos são escassos ou insuficientes. Ferramentas simples e customizáveis, como o \textit{Pygame}, têm sido utilizadas para desenvolver aplicações de rotulagem manual de imagens, facilitando a criação de anotações precisas e adaptadas às necessidades do projeto \cite{tessele2024modelo}.
-
+A construção de datasets anotados é uma etapa crítica para o treinamento de modelos de \textit{deep learning}, sobretudo em domínios específicos como a agricultura, onde conjuntos de dados públicos são escassos ou insuficientes. Ferramentas simples e customizáveis, como o \textit{Pygame}, têm sido utilizadas para desenvolver aplicações de rotulagem manual de imagens~\ref{fig:fig04}, facilitando a criação de anotações precisas e adaptadas às necessidades do projeto \cite{tessele2024modelo}.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{fig004.png}
+\caption{App Criado para rotulagens de imagens com pygame}
+\label{fig:fig04}
+\end{figure}
 O uso de interfaces gráficas interativas para \textit{labeling} não só acelera o processo, mas também melhora a qualidade das anotações, impactando diretamente na performance dos modelos de detecção. Essa abordagem tem se mostrado eficiente para preparar bases de dados específicas para detecção de plantas daninhas, contagem de plantas e identificação de falhas em culturas como o milho.
 
+\section{Resultados}
+\subsection{Precisão da CNN para detecção de milho}
+ok
+\subsection{Precisão da CNN binária milho vs não-milho}
+\subsection{Simulação da contagem e identificação em ortomosaico}
+\subsection{Discussão sobre performance em diferentes resoluções ou tipos de terreno}
 
-
-
+\section{Discussão e Trabalhos Futuros}
+\subsection{Inserção da CNN em tempo real em drones reais}
+\subsection{Aplicação de georreferenciamento para identificação de regiões críticas}
+\subsection{Aumento do dataset com dados sintéticos}
+\subsection{Discussão ética: automação, impacto social}
 
 \bibliographystyle{IEEEtran}
 \bibliography{bibliografia}
