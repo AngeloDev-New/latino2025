@@ -121,7 +121,16 @@ Diante disso, o projeto propõe o desenvolvimento de um assistente virtual bilí
 \section{Materiais e Métodos}
 O projeto seguiu as etapas de pesquisa, coleta de dados, desenvolvimento de arquitetura, treinamento do modelo, construção do assistente e validação \cite{souza2016proposta}.
 
-A coleta de dados foi realizada com professores e alunos indígenas da UNILA, em Foz do Iguaçu. Foram reunidas palavras e frases do cotidiano, organizadas em categorias temáticas, totalizando centenas de exemplos em Guarani. Para isso, foi criada uma página web interativa para capturar gravações de áudio, respeitando a oralidade da língua \cite{funai2016licoes}.
+A coleta de dados foi realizada com professores e alunos indígenas da UNILA, em Foz do Iguaçu. Foram reunidas palavras e frases do cotidiano, organizadas em categorias temáticas, totalizando centenas de exemplos em Guarani. Para respeitar a oralidade da língua, foi criada uma página web interativa para capturar gravações de áudio \cite{funai2016licoes}.
+
+Além da versão web, também foi desenvolvido um aplicativo móvel em Flutter, com a mesma finalidade de coleta de dados e registro de fala. Essa solução amplia o acesso e facilita o uso em dispositivos móveis, atendendo tanto ao público acadêmico quanto à comunidade envolvida.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.2\textwidth]{figs/app_image.jpeg}
+\caption{Interface do aplicativo desenvolvido em Flutter para coleta de gravações.}
+\label{fig:app_flutter}
+\end{figure}
 
 O modelo foi treinado no Google Colab usando PyTorch e Hugging Face Transformers, com dados estruturados em arquivos JSON no formato de aprendizado supervisionado. Foram utilizados modelos abertos como Phi-2, Phi-3-mini e TinyLlama. A versão inicial do assistente oferece interação por texto e voz, tradução automática, narração de histórias e explicações culturais.
 
@@ -134,7 +143,7 @@ Os resultados da pesquisa demonstram a viabilidade do uso de modelos de linguage
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=2.5in]{GRAPH.png}
+\includegraphics[width=3in]{GRAPH.png}
 \caption{Curva de Loss – Phi-2 vs Phi-3-mini vs TinyLlama}
 \label{fig:graph}
 \end{figure}
